@@ -1,9 +1,10 @@
+using BaseTemplate.Behaviours;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoSingleton<PlayerController>
 {
     [SerializeField] private float speed;
     [SerializeField] private float sidedSpeed;

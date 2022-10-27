@@ -1,6 +1,12 @@
 fileFormatVersion: 2
-guid: 4a9a1e4317b7c214f865c48d3f6856a0
+<<<<<<<< HEAD:Assets/TextMesh Pro/Examples & Extras/Scenes/17 - Old Computer Terminal.unity.meta
+guid: dd513493a660bf84abaa249c8872047e
+timeCreated: 1435300594
+licenseType: Store
+========
+guid: 9abfedbe404913445bcbd6b2e1099e1f
 folderAsset: yes
+>>>>>>>> origin/CharacterController:Assets/Prefab.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
