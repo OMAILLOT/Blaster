@@ -1,8 +1,14 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/TextMesh Pro/Examples & Extras/Scenes/12 - Link Example.unity.meta
 guid: 9747140c28254be2adc582210dfb89b8
 timeCreated: 1432629665
 licenseType: Store
+========
+guid: 6408897a8ba8fca488dd5ce48d513eeb
+folderAsset: yes
+>>>>>>>> origin/CharacterController:Assets/Plugins/Demigiant.meta
 DefaultImporter:
+  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

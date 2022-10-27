@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Pattern.meta
 guid: d49e43495a1a226469503387d6d002e2
+========
+guid: 40ba9e06829afef4b9aecb6a42a62b3e
+>>>>>>>> origin/CharacterController:Assets/Plugins.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
