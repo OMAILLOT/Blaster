@@ -43,13 +43,19 @@ public class PlayerController : MonoBehaviour
     {
         //print(playerInput.Player.MouseValue.ReadValue<Vector2>());
         
-        transform.RotateAround(transform.position, Vector3.up, currentMouseValue.x * sensibility * Time.deltaTime);
-
-        playerHead.transform.RotateAroundLocal(Vector3.right, currentMouseValue.y * sensibility * Time.deltaTime);
+        transform.RotateAround(transform.position, new Vector3(0, 1, 0), currentMouseValue.x * sensibility * Time.fixedDeltaTime);
+        print(playerHead.transform.localRotation.x);
+        if (playerHead.transform.localRotation.x <= 90 && playerHead.transform.localRotation.x >= -90)
+        {
+            playerHead.transform.Rotate(Vector3.left, currentMouseValue.y * (sensibility / 1.5f) * Time.fixedDeltaTime);
+        } else
+        {
+            playerHead.transform.Rotate(Vector3.left, 0f);
+        }
 
         if (isWalking)
         {
-            rb.velocity = transform.forward * speed * Time.fixedDeltaTime * currentSpeedValue;
+            rb.velocity += transform.forward * speed * Time.fixedDeltaTime * currentSpeedValue;
         }
 
         if (isSidedWalking)
@@ -63,26 +69,24 @@ public class PlayerController : MonoBehaviour
     void OnWalkPressed(InputAction.CallbackContext context)
     {
         currentSpeedValue = context.ReadValue<float>() * 2;
-        if (currentSpeedValue >= 1)
-        {
-            currentSpeedValue = 1;
-        } if (currentSpeedValue <= -1) currentSpeedValue = -1;
+        if (currentSpeedValue >= 1) currentSpeedValue = 1;
+        if (currentSpeedValue <= -1) currentSpeedValue = -1;
+
         isWalking = currentSpeedValue != 0;
     }
 
     void OnSidedWalkPressed(InputAction.CallbackContext context)
     {
         currentSidedSpeedValue = context.ReadValue<float>() * 2;
-        if (currentSidedSpeedValue >= 1)
-        {
-            currentSidedSpeedValue = 1;
-        } if (currentSidedSpeedValue <= -1) currentSidedSpeedValue = -1;
+        if (currentSidedSpeedValue >= 1) currentSidedSpeedValue = 1;
+        if (currentSidedSpeedValue <= -1) currentSidedSpeedValue = -1;
+
         isSidedWalking = currentSidedSpeedValue != 0;
     }
 
     void GetValueMouse(InputAction.CallbackContext context)
     {
         currentMouseValue = context.ReadValue<Vector2>();
-        print(currentMouseValue);
+        print(currentMouseValue.y);
     }
 }
