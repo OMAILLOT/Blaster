@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float sidedSpeed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float sensibility;
+    [SerializeField] GameObject playerHead;
     [SerializeField] private Rigidbody rb;
    
     private PlayerInput playerInput;
@@ -41,12 +42,14 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         //print(playerInput.Player.MouseValue.ReadValue<Vector2>());
-        transform.RotateAround(transform.position, Vector3.up, currentMouseValue.y * sensibility * Time.deltaTime);
-        transform.RotateAround(transform.position, Vector3.right, currentMouseValue.x * sensibility * Time.deltaTime);
+        
+        transform.RotateAround(transform.position, Vector3.up, currentMouseValue.x * sensibility * Time.deltaTime);
+
+        playerHead.transform.RotateAroundLocal(Vector3.right, currentMouseValue.y * sensibility * Time.deltaTime);
 
         if (isWalking)
         {
-            rb.velocity += transform.forward * speed * Time.fixedDeltaTime * currentSpeedValue;
+            rb.velocity = transform.forward * speed * Time.fixedDeltaTime * currentSpeedValue;
         }
 
         if (isSidedWalking)
@@ -59,13 +62,21 @@ public class PlayerController : MonoBehaviour
 
     void OnWalkPressed(InputAction.CallbackContext context)
     {
-        currentSpeedValue = context.ReadValue<float>();
+        currentSpeedValue = context.ReadValue<float>() * 2;
+        if (currentSpeedValue >= 1)
+        {
+            currentSpeedValue = 1;
+        } if (currentSpeedValue <= -1) currentSpeedValue = -1;
         isWalking = currentSpeedValue != 0;
     }
 
     void OnSidedWalkPressed(InputAction.CallbackContext context)
     {
-        currentSidedSpeedValue = context.ReadValue<float>();
+        currentSidedSpeedValue = context.ReadValue<float>() * 2;
+        if (currentSidedSpeedValue >= 1)
+        {
+            currentSidedSpeedValue = 1;
+        } if (currentSidedSpeedValue <= -1) currentSidedSpeedValue = -1;
         isSidedWalking = currentSidedSpeedValue != 0;
     }
 
