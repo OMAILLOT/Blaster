@@ -9,11 +9,15 @@ public class MenuCanvas : MonoBehaviour
 
     MenuState state;
 
-    [SerializeField] RectTransform menu,equipement;
+    [SerializeField] RectTransform menu, equipement;
+
+    [SerializeField] EquipementScreen equipementScreen;
 
     public void Init()
     {
         state = MenuState.MENU;
+
+        equipementScreen.Armory.Init();
     }
 
     public void OpenEquipement()

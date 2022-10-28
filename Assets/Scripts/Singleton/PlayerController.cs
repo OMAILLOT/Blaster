@@ -42,7 +42,6 @@ public class PlayerController : MonoSingleton<PlayerController>
 
     void FixedUpdate()
     {
-        //print(playerInput.Player.MouseValue.ReadValue<Vector2>());
         
         transform.RotateAround(transform.position, Vector3.up, currentMouseValue.x * sensibility * Time.deltaTime);
 
@@ -84,6 +83,5 @@ public class PlayerController : MonoSingleton<PlayerController>
     void GetValueMouse(InputAction.CallbackContext context)
     {
         currentMouseValue = context.ReadValue<Vector2>();
-        print(currentMouseValue);
     }
 }
