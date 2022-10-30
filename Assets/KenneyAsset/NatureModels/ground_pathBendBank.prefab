@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7329923769072998553}
   - component: {fileID: 5915132040613123900}
   - component: {fileID: 8498910464163849206}
+  - component: {fileID: 8090984182895473045}
   m_Layer: 0
   m_Name: ground_pathBendBank
   m_TagString: Untagged
@@ -85,3 +86,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8090984182895473045
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7994679309987578403}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4774195173088412116, guid: bf34f9bd213a2f74286017c6e71e35f8, type: 3}

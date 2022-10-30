@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1810719731482600466}
   - component: {fileID: 3354939373639478199}
   - component: {fileID: 678870210791366525}
+  - component: {fileID: -4956668884359113979}
   m_Layer: 0
   m_Name: stone_tallD
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-4956668884359113979
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327199234734161576}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4295203676460331610, guid: cc3225a40470a5044ab09bd9b00d944d, type: 3}

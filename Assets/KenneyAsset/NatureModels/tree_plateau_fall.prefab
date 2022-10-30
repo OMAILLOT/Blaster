@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8235817156673977462}
   - component: {fileID: 5036250909501404115}
   - component: {fileID: 7061834213099652889}
+  - component: {fileID: -3116269366026305788}
   m_Layer: 0
   m_Name: tree_plateau_fall
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-3116269366026305788
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8719057651271395020}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3654588071529179883, guid: 1957a5a49fbbd5c42ba6af88e34cd928, type: 3}

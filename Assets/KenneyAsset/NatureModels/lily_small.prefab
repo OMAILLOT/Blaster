@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2888678428377155617}
   - component: {fileID: 2285997015723542404}
   - component: {fileID: 4061553507551867726}
+  - component: {fileID: 3735486440946495489}
   m_Layer: 0
   m_Name: lily_small
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3735486440946495489
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2548321698616267419}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4240664013425516233, guid: f9b5ea6e425171f469ac3fe937f33fd7, type: 3}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2497311667039516312}
   - component: {fileID: 1515426294540220733}
   - component: {fileID: 3666800250532384247}
+  - component: {fileID: 1547456292443190034}
   m_Layer: 0
   m_Name: path_stoneCircle
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1547456292443190034
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3018514656296987682}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6859134200549966656, guid: 0a91318e4546ef24b9c4d8a9f67a8d9c, type: 3}

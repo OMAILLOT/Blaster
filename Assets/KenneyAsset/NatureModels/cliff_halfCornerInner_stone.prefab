@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 638912331100965370}
   - component: {fileID: 4571722018020181599}
   - component: {fileID: 1771871500349747861}
+  - component: {fileID: -1391005319528409218}
   m_Layer: 0
   m_Name: cliff_halfCornerInner_stone
   m_TagString: Untagged
@@ -85,3 +86,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-1391005319528409218
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258411405308564288}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5403768412784923176, guid: d01230931bb9da04d9ed8ebb05e6e709, type: 3}

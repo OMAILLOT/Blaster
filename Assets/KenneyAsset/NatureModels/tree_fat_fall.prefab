@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8910410649906911343}
   - component: {fileID: 5478621059265599434}
   - component: {fileID: 7774074537927303936}
+  - component: {fileID: -9162108967123744864}
   m_Layer: 0
   m_Name: tree_fat_fall
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-9162108967123744864
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8134613539588358869}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4905147850311974407, guid: 35f9b05820d284f48b4a49b5a6a0affc, type: 3}

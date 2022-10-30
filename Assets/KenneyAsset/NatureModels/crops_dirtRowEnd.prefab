@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 473066562443519282}
   - component: {fileID: 3548678303386741399}
   - component: {fileID: 1647058886090317405}
+  - component: {fileID: 1378302045382946384}
   m_Layer: 0
   m_Name: crops_dirtRowEnd
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1378302045382946384
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998527139680616328}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5693396853645939135, guid: 672ec7e9fb0a4e74ebb7415dd4d356e1, type: 3}

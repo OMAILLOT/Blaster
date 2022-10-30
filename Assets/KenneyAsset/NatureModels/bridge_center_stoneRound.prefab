@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3697911137920468815}
   - component: {fileID: 359800900173875434}
   - component: {fileID: 2529530174952324128}
+  - component: {fileID: 8382231948983589733}
   m_Layer: 0
   m_Name: bridge_center_stoneRound
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8382231948983589733
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4042629630560411125}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4719307787930672137, guid: 92314d4f5e77b4140adb10854d47c201, type: 3}

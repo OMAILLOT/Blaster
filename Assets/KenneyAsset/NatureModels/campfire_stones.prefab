@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1936936819990617509}
   - component: {fileID: 3264751648855380480}
   - component: {fileID: 768511461289207498}
+  - component: {fileID: 6003723936847603865}
   m_Layer: 0
   m_Name: campfire_stones
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6003723936847603865
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273024913935566623}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1896356093550943546, guid: be492eafc6cb67a4fb34e4e98bcb3673, type: 3}

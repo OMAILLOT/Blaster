@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5751590357252323903}
   - component: {fileID: 8682407237988726170}
   - component: {fileID: 6889078237726097744}
+  - component: {fileID: -2428019569458266818}
   m_Layer: 0
   m_Name: cliff_corner_rock
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-2428019569458266818
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4943281513067602053}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5916485956037364225, guid: 04b994a2c325b3b46a164b24f731e9d5, type: 3}

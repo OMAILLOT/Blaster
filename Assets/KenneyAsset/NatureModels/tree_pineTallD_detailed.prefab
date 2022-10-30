@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1894364536968458354}
   - component: {fileID: 3307323379410091991}
   - component: {fileID: 720873215886740253}
+  - component: {fileID: 1626129780433408943}
   m_Layer: 0
   m_Name: tree_pineTallD_detailed
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1626129780433408943
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225526857024826056}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 178624203084477465, guid: 1435663f933c7ec409addc45f0b40edf, type: 3}

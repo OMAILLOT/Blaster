@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5830782419330926653}
   - component: {fileID: 7441285939715835800}
   - component: {fileID: 4656780748895810386}
+  - component: {fileID: -4334064416429676581}
   m_Layer: 0
   m_Name: cliff_cornerInnerTop_rock
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-4334064416429676581
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6602498172203848327}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7818625730958048263, guid: 7c9b2ccb5d257284eab370c3af359f0c, type: 3}

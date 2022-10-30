@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2292229715174051444}
   - component: {fileID: 2909458755504849361}
   - component: {fileID: 1118174855461909787}
+  - component: {fileID: -112181792804580796}
   m_Layer: 0
   m_Name: tree_tall_fall
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-112181792804580796
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478432383286580430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6087234958387790698, guid: ba479cf6844be8b448729b867547c743, type: 3}

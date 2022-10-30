@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7350408565551080539}
   - component: {fileID: 5885710139597925374}
   - component: {fileID: 8523846769563852596}
+  - component: {fileID: -1434622163962758192}
   m_Layer: 0
   m_Name: rock_largeB
   m_TagString: Untagged
@@ -85,3 +86,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-1434622163962758192
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875165215293800161}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 769399897033540445, guid: 8d22d163df6b86349b7efb50b1fc7539, type: 3}

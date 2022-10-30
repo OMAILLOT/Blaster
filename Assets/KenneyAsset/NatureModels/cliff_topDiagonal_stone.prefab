@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2999500623433511507}
   - component: {fileID: 2166097802409426422}
   - component: {fileID: 4173553932394481980}
+  - component: {fileID: 7995141408354583426}
   m_Layer: 0
   m_Name: cliff_topDiagonal_stone
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7995141408354583426
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2516260124207704297}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 9137793816758519443, guid: 49e50a221398dbe4c861df030bb106c1, type: 3}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1651438256125729070}
   - component: {fileID: 2397267183744997003}
   - component: {fileID: 477445901472932417}
+  - component: {fileID: 690045408980977585}
   m_Layer: 0
   m_Name: fence_bendCenter
   m_TagString: Untagged
@@ -85,3 +86,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &690045408980977585
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134924977775641492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8537209287567746111, guid: 346e1790abb8f8349bc472e69548c672, type: 3}

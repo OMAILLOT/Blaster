@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7711249438440998132}
   - component: {fileID: 6677720144572828497}
   - component: {fileID: 8883614553865928603}
+  - component: {fileID: -6297395639487204879}
   m_Layer: 0
   m_Name: ground_riverSideOpen
   m_TagString: Untagged
@@ -86,3 +87,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-6297395639487204879
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6937808620793142862}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4151791541118835312, guid: 86f4762f2bf46074c93350fb4a829ed8, type: 3}

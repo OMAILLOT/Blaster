@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6575316295604704049}
   - component: {fileID: 7849752985232219284}
   - component: {fileID: 5407446056994924638}
+  - component: {fileID: -595524293536927601}
   m_Layer: 0
   m_Name: path_woodCorner
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-595524293536927601
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5767958807899228555}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6766773004119842612, guid: 11f2bc6846e4dc94880cc87b1a69d439, type: 3}

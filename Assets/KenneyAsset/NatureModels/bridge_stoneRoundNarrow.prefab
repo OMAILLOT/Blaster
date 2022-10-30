@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 66334054074089698}
   - component: {fileID: 3982433236572049223}
   - component: {fileID: 1198105540577131405}
+  - component: {fileID: -2360571256025883616}
   m_Layer: 0
   m_Name: bridge_stoneRoundNarrow
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-2360571256025883616
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837804582098262616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7952236122876924003, guid: 1a5a25c91d98b8a469f681aa99839c3f, type: 3}

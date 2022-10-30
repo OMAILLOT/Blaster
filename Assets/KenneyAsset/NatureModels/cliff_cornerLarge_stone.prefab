@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7422331455376328750}
   - component: {fileID: 5813778470834341771}
   - component: {fileID: 8595761997301543745}
+  - component: {fileID: 3448291989694629738}
   m_Layer: 0
   m_Name: cliff_cornerLarge_stone
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3448291989694629738
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7803255525891265172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5206396821063045568, guid: df66bf78a584af1458f0665e7dc52f50, type: 3}

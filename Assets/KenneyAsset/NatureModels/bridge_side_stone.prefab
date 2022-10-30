@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9138986836472467134}
   - component: {fileID: 5295089181090283803}
   - component: {fileID: 7971117112053102033}
+  - component: {fileID: -6666027237179025118}
   m_Layer: 0
   m_Name: bridge_side_stone
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-6666027237179025118
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8475744502128694276}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1593934874586499100, guid: bf983c65283a7cb448d9db6988c73ab1, type: 3}

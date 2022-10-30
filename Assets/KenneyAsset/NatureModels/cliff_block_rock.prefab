@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8266653399050052233}
   - component: {fileID: 4978402706498022700}
   - component: {fileID: 7129798180278409702}
+  - component: {fileID: -2811355105606010960}
   m_Layer: 0
   m_Name: cliff_block_rock
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-2811355105606010960
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8787329757115529267}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8944649345951860931, guid: 2e2a5a012b73ee34ca0158f696b8356b, type: 3}

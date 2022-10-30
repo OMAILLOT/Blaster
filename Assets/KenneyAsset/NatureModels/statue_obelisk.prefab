@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2386748568855711787}
   - component: {fileID: 1635005370338254734}
   - component: {fileID: 3554540708986547012}
+  - component: {fileID: -3240032676574140811}
   m_Layer: 0
   m_Name: statue_obelisk
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-3240032676574140811
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3050273408884492945}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5192375811869552525, guid: 7b04c0c30a2f5a541809f53d5ca427e3, type: 3}

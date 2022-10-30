@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3290535829082258964}
   - component: {fileID: 1875062540919878065}
   - component: {fileID: 4458977303576921467}
+  - component: {fileID: -9161813283598706189}
   m_Layer: 0
   m_Name: ground_riverStraight
   m_TagString: Untagged
@@ -86,3 +87,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-9161813283598706189
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2801665903401690286}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 263971632234626451, guid: abab0fd10b90a394ea623612b03615f1, type: 3}

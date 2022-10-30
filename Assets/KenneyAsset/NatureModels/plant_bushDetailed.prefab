@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5289520604424135380}
   - component: {fileID: 9135548973820439921}
   - component: {fileID: 6422988670656092603}
+  - component: {fileID: -88754413597964461}
   m_Layer: 0
   m_Name: plant_bushDetailed
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-88754413597964461
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4765923698848774254}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3915032813886128681, guid: ee5ceefee5d30c14ea70dca35ae10d9f, type: 3}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6794885390406043766}
   - component: {fileID: 7630104742213699539}
   - component: {fileID: 5622573296755880729}
+  - component: {fileID: -7655937942573141159}
   m_Layer: 0
   m_Name: cliff_blockSlopeWalls_rock
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-7655937942573141159
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6127033972910494412}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6624998377849451781, guid: 862af6ded38c48a44b28191bcbf33da6, type: 3}

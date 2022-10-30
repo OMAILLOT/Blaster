@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3294111412910682716}
   - component: {fileID: 1880485347366206969}
   - component: {fileID: 4466484771182479667}
+  - component: {fileID: 3650491114081453423}
   m_Layer: 0
   m_Name: rock_smallFlatB
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3650491114081453423
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2809358088831346918}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4391907621382136923, guid: 5d6c39f205c266d478b9befa8b490562, type: 3}

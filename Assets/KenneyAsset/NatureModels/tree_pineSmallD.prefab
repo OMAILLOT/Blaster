@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4538985057285058753}
   - component: {fileID: 671719455440977764}
   - component: {fileID: 3366047099523681198}
+  - component: {fileID: 9201781164895850719}
   m_Layer: 0
   m_Name: tree_pineSmallD
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &9201781164895850719
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3870393565137365627}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2033622204986509768, guid: 2a574881eb7263448b6431359037c9f9, type: 3}

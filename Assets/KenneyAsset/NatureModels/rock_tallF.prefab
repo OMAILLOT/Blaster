@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8603470118834150028}
   - component: {fileID: 4668669205686719785}
   - component: {fileID: 7435028064118235619}
+  - component: {fileID: 2311703437196899844}
   m_Layer: 0
   m_Name: rock_tallF
   m_TagString: Untagged
@@ -85,3 +86,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2311703437196899844
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8948224551833845814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5103750125934219529, guid: 5b39f776a8e4c174699877815a85a3bc, type: 3}

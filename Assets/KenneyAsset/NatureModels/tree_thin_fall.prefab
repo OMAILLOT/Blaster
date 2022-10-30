@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2283882557771065987}
   - component: {fileID: 2890783747943736614}
   - component: {fileID: 1151469914523455980}
+  - component: {fileID: 3686822461145989748}
   m_Layer: 0
   m_Name: tree_thin_fall
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3686822461145989748
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511568700352229433}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1643000058103759315, guid: 3486e86ecbb30644b9bf49d5e3e4fb20, type: 3}

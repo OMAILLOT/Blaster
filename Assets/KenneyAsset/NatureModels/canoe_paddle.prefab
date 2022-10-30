@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8942018070849073676}
   - component: {fileID: 5456029147788361129}
   - component: {fileID: 7805656056055122275}
+  - component: {fileID: 94108814493540831}
   m_Layer: 0
   m_Name: canoe_paddle
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &94108814493540831
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8598425723463887030}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1282010811337638422, guid: a2e532675b88497498899bad5ca598db, type: 3}

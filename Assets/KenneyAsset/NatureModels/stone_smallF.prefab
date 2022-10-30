@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9212102986102228178}
   - component: {fileID: 5221973584976497527}
   - component: {fileID: 8042542758259310525}
+  - component: {fileID: -5317262243272305340}
   m_Layer: 0
   m_Name: stone_smallF
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-5317262243272305340
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8402633298152529512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7687624613835430054, guid: 6d6e7d23ee4d150498a866fb36ac472f, type: 3}

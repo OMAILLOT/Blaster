@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2103446193691614456}
   - component: {fileID: 3071220468253840221}
   - component: {fileID: 971614199824066455}
+  - component: {fileID: 732080999108511829}
   m_Layer: 0
   m_Name: path_stoneEnd
   m_TagString: Untagged
@@ -85,3 +86,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &732080999108511829
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619925357653296706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5028493336078921005, guid: 3258f88d309ee7047a49d4110b05c5e3, type: 3}

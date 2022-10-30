@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2633916670479389931}
   - component: {fileID: 1378759908520385358}
   - component: {fileID: 3802904631512182660}
+  - component: {fileID: -2757074101508850367}
   m_Layer: 0
   m_Name: cliff_stepsCornerInner_stone
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-2757074101508850367
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442542238420635217}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8242404170079683451, guid: 276a78712b750c243bfbd7beec0a8b59, type: 3}

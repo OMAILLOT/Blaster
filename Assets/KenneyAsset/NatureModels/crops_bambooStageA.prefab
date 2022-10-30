@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4178138460329023939}
   - component: {fileID: 1032557278315681382}
   - component: {fileID: 3004065974070600364}
+  - component: {fileID: -1853472912759787774}
   m_Layer: 0
   m_Name: crops_bambooStageA
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-1853472912759787774
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3652536285811131257}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4768735853118303496, guid: 22bc58bb4220dbc4aadae15b3a9fb952, type: 3}

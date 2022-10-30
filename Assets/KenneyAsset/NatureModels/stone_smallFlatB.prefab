@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2290867494707248257}
   - component: {fileID: 2910750653163549476}
   - component: {fileID: 1117428195480324078}
+  - component: {fileID: -10130610443719954}
   m_Layer: 0
   m_Name: stone_smallFlatB
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-10130610443719954
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477492345488533051}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -249951381921268673, guid: 81a404b0e8b1f8449bc0969d713e953d, type: 3}

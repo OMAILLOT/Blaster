@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2207222232487024145}
   - component: {fileID: 2958437761993202100}
   - component: {fileID: 1074825606377778558}
+  - component: {fileID: 3881202878611937905}
   m_Layer: 0
   m_Name: cliff_waterfall_stone
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3881202878611937905
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579198046121200811}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2155388753296476183, guid: 0e4eecb8cd43b2748ae8f52f75657b1f, type: 3}

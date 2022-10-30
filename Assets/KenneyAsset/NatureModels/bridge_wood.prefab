@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4505130233392512817}
   - component: {fileID: 660528890501181588}
   - component: {fileID: 3372735216419619934}
+  - component: {fileID: 8085433287450727783}
   m_Layer: 0
   m_Name: bridge_wood
   m_TagString: Untagged
@@ -85,3 +86,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8085433287450727783
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3877213073132217739}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2213339594014392488, guid: 5d9313f6320b3994f8ad63f300465e66, type: 3}

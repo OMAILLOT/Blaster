@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 6392708537460017243}
   - component: {fileID: 8005338682848856062}
   - component: {fileID: 5259177798260929332}
+  - component: {fileID: -3341280838172016139}
   m_Layer: 0
   m_Name: tree_palmDetailedShort
   m_TagString: Untagged
@@ -251,3 +252,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-3341280838172016139
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6051894689695077089}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2823111959077178916, guid: 3d4a8ab9c9be36e4bb0653613361b7e2, type: 3}

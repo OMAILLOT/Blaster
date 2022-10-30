@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5997987552345220252}
   - component: {fileID: 7247130123140295481}
   - component: {fileID: 4861087394257936371}
+  - component: {fileID: -7112438989808873618}
   m_Layer: 0
   m_Name: crops_wheatStageB
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-7112438989808873618
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6374547626652614182}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7209994631503950939, guid: 93a12075ef0f63a42882d5edc0778599, type: 3}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8508296561007600849}
   - component: {fileID: 4736750183084600180}
   - component: {fileID: 7374827424658677694}
+  - component: {fileID: -78968521170661210}
   m_Layer: 0
   m_Name: fence_simpleHigh
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-78968521170661210
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9032068043772624491}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5492875511780578070, guid: ed8b21f5d393c1f4f9ead2e2e7289f15, type: 3}

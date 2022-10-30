@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3099451485888512786}
   - component: {fileID: 2066216686989479095}
   - component: {fileID: 4271763652554455165}
+  - component: {fileID: 7183667719939381497}
   m_Layer: 0
   m_Name: ground_riverSide
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2326291833644210600}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: -0.049999997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -63,7 +64,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: -6126091556477775235, guid: 586714a27c5130145a09db3898484a91, type: 3}
   - {fileID: -7908462029823311255, guid: 586714a27c5130145a09db3898484a91, type: 3}
-  - {fileID: -9117483709511198939, guid: 586714a27c5130145a09db3898484a91, type: 3}
+  - {fileID: -9117483709511198939, guid: 2e2a5a012b73ee34ca0158f696b8356b, type: 3}
   - {fileID: 5604539269314155553, guid: 586714a27c5130145a09db3898484a91, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -86,3 +87,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7183667719939381497
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2326291833644210600}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6753811347630312594, guid: 586714a27c5130145a09db3898484a91, type: 3}

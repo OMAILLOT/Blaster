@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1955595722549099166}
   - component: {fileID: 3210064224386610491}
   - component: {fileID: 822055565291160049}
+  - component: {fileID: 8283571628561543452}
   m_Layer: 0
   m_Name: ground_pathTile
   m_TagString: Untagged
@@ -85,3 +86,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8283571628561543452
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182330547259547684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6418709299124624926, guid: 87f8de8cce653004291afd28d6a83074, type: 3}

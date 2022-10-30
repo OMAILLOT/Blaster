@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9075685810676783615}
   - component: {fileID: 5358311303221761626}
   - component: {fileID: 7906206534511534736}
+  - component: {fileID: 8955974119163512226}
   m_Layer: 0
   m_Name: tree_fat_darkh
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8955974119163512226
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8554728798707319621}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3578713478433014293, guid: d9637cc5cd699434c88a91155ed3776e, type: 3}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4385599270176147636}
   - component: {fileID: 825034877823928081}
   - component: {fileID: 3213295864169640923}
+  - component: {fileID: 9207776469050003290}
   m_Layer: 0
   m_Name: tent_smallClosed
   m_TagString: Untagged
@@ -86,3 +87,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &9207776469050003290
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4005696646435279374}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6652549943115751875, guid: 7b83e4c1a8fb00446bcbe96faf1b2c11, type: 3}

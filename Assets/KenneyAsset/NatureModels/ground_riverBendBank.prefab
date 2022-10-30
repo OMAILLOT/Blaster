@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 329648692136983436}
   - component: {fileID: 3692105244125180969}
   - component: {fileID: 1501960790215803107}
+  - component: {fileID: 3500137470951830398}
   m_Layer: 0
   m_Name: ground_riverBendBank
   m_TagString: Untagged
@@ -86,3 +87,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3500137470951830398
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141931961884827958}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -655745224256964371, guid: 431b89e211114304897b58123e24d37c, type: 3}

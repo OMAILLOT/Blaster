@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3080157723884995966}
   - component: {fileID: 2094508852133776091}
   - component: {fileID: 4248521716227685905}
+  - component: {fileID: 1637046812395358348}
   m_Layer: 0
   m_Name: stump_round
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1637046812395358348
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446927453397393348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2826871161875459178, guid: b1f5926850362e04e918b80835300baa, type: 3}

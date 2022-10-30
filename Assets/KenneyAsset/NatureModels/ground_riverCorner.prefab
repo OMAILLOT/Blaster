@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4275393425025575035}
   - component: {fileID: 935310828708538334}
   - component: {fileID: 3106942197601096468}
+  - component: {fileID: -8881390580397594374}
   m_Layer: 0
   m_Name: ground_riverCorner
   m_TagString: Untagged
@@ -86,3 +87,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-8881390580397594374
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3467471579133309633}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2385572956284395213, guid: 1389b2d6c3d3f284fb55c56f4dcbacac, type: 3}

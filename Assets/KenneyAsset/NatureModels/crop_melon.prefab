@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2275686681351257542}
   - component: {fileID: 2898918960613847651}
   - component: {fileID: 1143896878154811049}
+  - component: {fileID: -3860731505694480687}
   m_Layer: 0
   m_Name: crop_melon
   m_TagString: Untagged
@@ -85,3 +86,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-3860731505694480687
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503934365627262844}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1830311798287620339, guid: 8d9fa4f67faf8574c95b0ac9d98e71c3, type: 3}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5539045277428283561}
   - component: {fileID: 8895031203487676172}
   - component: {fileID: 6671388547292136390}
+  - component: {fileID: 3797839498966769411}
   m_Layer: 0
   m_Name: tree_pineGroundA
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3797839498966769411
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5158157563993956883}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9012368921897224461, guid: 8ee4003acc61e024e99d39bfe156b44a, type: 3}
