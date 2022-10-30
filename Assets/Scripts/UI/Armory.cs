@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,12 +9,16 @@ public class Armory : MonoBehaviour
 {
     public List<WeaponButton> weapons;
 
+    [SerializeField] InfoArmory infoArmory;
+
     WeaponButton actualWeapon;
 
     public void Init()
     {
         foreach (WeaponButton weapon in weapons)
         {
+            weapon.weaponName.text = weapon.weaponData._name;
+
             if (weapon.weaponData == PlayerData.Instance.PlayerWeapon)
             {
                 SelectWeapon(weapon);
@@ -25,8 +30,8 @@ public class Armory : MonoBehaviour
     {
         if (actualWeapon != null)
         {
-            actualWeapon.weaponName.DOColor(Color.black, .3f);
-            actualWeapon.background.DOColor(Color.white, .3f);
+            actualWeapon.weaponName.DOColor(ColorManager.Instance.DarkGrey, .3f);
+            actualWeapon.background.DOColor(ColorManager.Instance.LightGrey, .3f);
         }
 
         actualWeapon = newWeapon;
@@ -34,6 +39,9 @@ public class Armory : MonoBehaviour
         PlayerData.Instance.PlayerWeapon = actualWeapon.weaponData;
 
         actualWeapon.weaponName.DOColor(Color.white, .3f);
-        actualWeapon.background.DOColor(Color.black, .3f);
+        actualWeapon.background.DOColor(ColorManager.Instance.DarkGrey, .3f);
+
+        infoArmory.Init(actualWeapon.weaponData);
     }
+
 }
