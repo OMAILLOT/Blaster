@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 143213144}
   - component: {fileID: 143213143}
   - component: {fileID: 143213142}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1087,19 +1087,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 767637619, guid: a5eb59ed69c22084d877e384d0cf175e, type: 3}
       propertyPath: speed
-      value: 160
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 767637619, guid: a5eb59ed69c22084d877e384d0cf175e, type: 3}
+      propertyPath: jumpForce
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 767637619, guid: a5eb59ed69c22084d877e384d0cf175e, type: 3}
       propertyPath: sidedSpeed
-      value: 160
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 767637619, guid: a5eb59ed69c22084d877e384d0cf175e, type: 3}
       propertyPath: sensibility
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 767637619, guid: a5eb59ed69c22084d877e384d0cf175e, type: 3}
+      propertyPath: groundLayerMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 767637621, guid: a5eb59ed69c22084d877e384d0cf175e, type: 3}
       propertyPath: m_Drag
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 85091769167365115, guid: a5eb59ed69c22084d877e384d0cf175e,
         type: 3}

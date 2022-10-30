@@ -53,6 +53,15 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Value"",
+                    ""id"": ""40e6ba0a-70d3-4ec9-9475-97b649257b21"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -132,6 +141,17 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""action"": ""MouseValue"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3a8f4dd3-0b0b-4a7d-b126-2ea39be56062"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -160,6 +180,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         m_Player_Walk = m_Player.FindAction("Walk", throwIfNotFound: true);
         m_Player_SidedWalk = m_Player.FindAction("SidedWalk", throwIfNotFound: true);
         m_Player_MouseValue = m_Player.FindAction("MouseValue", throwIfNotFound: true);
+        m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -222,6 +243,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Walk;
     private readonly InputAction m_Player_SidedWalk;
     private readonly InputAction m_Player_MouseValue;
+    private readonly InputAction m_Player_Jump;
     public struct PlayerActions
     {
         private @PlayerInput m_Wrapper;
@@ -229,6 +251,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         public InputAction @Walk => m_Wrapper.m_Player_Walk;
         public InputAction @SidedWalk => m_Wrapper.m_Player_SidedWalk;
         public InputAction @MouseValue => m_Wrapper.m_Player_MouseValue;
+        public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -247,6 +270,9 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 @MouseValue.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseValue;
                 @MouseValue.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseValue;
                 @MouseValue.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMouseValue;
+                @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
+                @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
+                @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -260,6 +286,9 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 @MouseValue.started += instance.OnMouseValue;
                 @MouseValue.performed += instance.OnMouseValue;
                 @MouseValue.canceled += instance.OnMouseValue;
+                @Jump.started += instance.OnJump;
+                @Jump.performed += instance.OnJump;
+                @Jump.canceled += instance.OnJump;
             }
         }
     }
@@ -278,5 +307,6 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         void OnWalk(InputAction.CallbackContext context);
         void OnSidedWalk(InputAction.CallbackContext context);
         void OnMouseValue(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
     }
 }
