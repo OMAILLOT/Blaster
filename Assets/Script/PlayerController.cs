@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private Vector2 currentMouseValue;
     private bool isWalking;
     private bool isSidedWalking;
+    private bool isVisionUp;
 
     // Start is called before the first frame update
     void Start()
@@ -40,18 +41,11 @@ public class PlayerController : MonoBehaviour
     }
 
     void FixedUpdate()
-    {
-        //print(playerInput.Player.MouseValue.ReadValue<Vector2>());
-        
+    {        
         transform.RotateAround(transform.position, new Vector3(0, 1, 0), currentMouseValue.x * sensibility * Time.fixedDeltaTime);
-        print(playerHead.transform.localRotation.x);
-        if (playerHead.transform.localRotation.x <= 90 && playerHead.transform.localRotation.x >= -90)
-        {
-            playerHead.transform.Rotate(Vector3.left, currentMouseValue.y * (sensibility / 1.5f) * Time.fixedDeltaTime);
-        } else
-        {
-            playerHead.transform.Rotate(Vector3.left, 0f);
-        }
+        print(playerHead.transform.localRotation.x * 100);
+        playerHead.transform.Rotate(Vector3.left, currentMouseValue.y * (sensibility / 1.5f) * Time.fixedDeltaTime,Space.Self);
+        isVisionUp = playerHead.transform.localRotation.eulerAngles.x >= 290;
 
         if (isWalking)
         {
@@ -86,7 +80,23 @@ public class PlayerController : MonoBehaviour
 
     void GetValueMouse(InputAction.CallbackContext context)
     {
-        currentMouseValue = context.ReadValue<Vector2>();
-        print(currentMouseValue.y);
+
+            currentMouseValue = context.ReadValue<Vector2>();
+        if (playerHead.transform.localRotation.x * 100 >= 70 &&
+            currentMouseValue.y > 0)
+        {
+            currentMouseValue.y = 0f;
+            if (playerHead.transform.localRotation.x * 100 >= 80) playerHead.transform.Rotate(Vector3.right, 69.9f);
+        }
+
+        if (playerHead.transform.localRotation.x * 100 <= -70 &&
+            currentMouseValue.y < 0)
+        {
+            currentMouseValue.y = 0f;
+            if (playerHead.transform.localRotation.x * 100 <= -80) playerHead.transform.Rotate(Vector3.right, -69.9f);
+
+
+        }
+
     }
 }
