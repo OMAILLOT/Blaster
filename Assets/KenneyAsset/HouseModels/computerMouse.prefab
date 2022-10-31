@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 4736370938906268444}
   - component: {fileID: 8508746460399066297}
   - component: {fileID: 5904734348206286963}
-  m_Layer: 0
+  - component: {fileID: -668894628370172244}
+  m_Layer: 6
   m_Name: computerMouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-668894628370172244
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5400142417226467750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2343033649474158163, guid: beef8890d90de9e44a1165b74b37cd36, type: 3}

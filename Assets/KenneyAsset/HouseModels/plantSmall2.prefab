@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2497808389597050946}
   - component: {fileID: 1514938913521874919}
   - component: {fileID: 3666725746869781293}
-  m_Layer: 0
+  - component: {fileID: -4790660244367749913}
+  m_Layer: 6
   m_Name: plantSmall2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-4790660244367749913
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3018027285864014584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2565378675570293008, guid: 260e612994e1e6244904d72fd87edee8, type: 3}

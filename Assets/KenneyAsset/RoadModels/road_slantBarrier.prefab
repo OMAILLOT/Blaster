@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 3399254380055220934}
   - component: {fileID: 1766334970222009699}
   - component: {fileID: 4568830379154090409}
-  m_Layer: 0
+  - component: {fileID: 5828474615694054032}
+  m_Layer: 6
   m_Name: road_slantBarrier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5828474615694054032
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2623139481428002940}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3938859053064115135, guid: 3e6a65729bda98a41affdd6859e2a016, type: 3}

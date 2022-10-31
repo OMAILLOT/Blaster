@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5480369954360441963}
   - component: {fileID: 8908670895337223118}
   - component: {fileID: 6648724493348849412}
-  m_Layer: 0
+  - component: {fileID: -1727065418095508701}
+  m_Layer: 6
   m_Name: tableCoffeeGlass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-1727065418095508701
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5135792165046249169}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 843459922882433705, guid: 084ab4f9d3d7f9c4f8a2aa7c622942b1, type: 3}

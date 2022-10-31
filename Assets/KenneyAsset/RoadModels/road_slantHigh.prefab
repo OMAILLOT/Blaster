@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5934890309879980093}
   - component: {fileID: 7346264756065595288}
   - component: {fileID: 4762516570160372562}
-  m_Layer: 0
+  - component: {fileID: -3928732085402197463}
+  m_Layer: 6
   m_Name: road_slantHigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,3 +87,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-3928732085402197463
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6419643663843703431}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5479121427207863538, guid: f94e3c8b2186a074e8f4b422126bbb76, type: 3}

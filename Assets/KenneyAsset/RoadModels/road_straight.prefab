@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5559023059846617856}
   - component: {fileID: 8829946505706329253}
   - component: {fileID: 6732515141000306799}
-  m_Layer: 0
+  - component: {fileID: 6662821682359789529}
+  m_Layer: 6
   m_Name: road_straight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,3 +87,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6662821682359789529
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5075080320113213882}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6440166555503141632, guid: 6a277f71d6fb9034b9a44d708958f5fe, type: 3}

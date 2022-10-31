@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1726099487920725102}
   - component: {fileID: 2331613103142245323}
   - component: {fileID: 558299613625345793}
-  m_Layer: 0
+  - component: {fileID: 8495000905888130286}
+  m_Layer: 6
   m_Name: road_curveIntersectionBarrier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8495000905888130286
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071522763303012052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8576461149109201310, guid: 7307be1bc3c3c7445bd7ae92cb919cf2, type: 3}

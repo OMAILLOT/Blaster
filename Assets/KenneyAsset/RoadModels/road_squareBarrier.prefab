@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 8838198688858358995}
   - component: {fileID: 5550771702179744630}
   - component: {fileID: 7704737837364953020}
-  m_Layer: 0
+  - component: {fileID: -6873961688574673478}
+  m_Layer: 6
   m_Name: road_squareBarrier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-6873961688574673478
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8209013521292828265}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5295034917926153423, guid: e6a1961756942534f895e91d9bdae1d7, type: 3}

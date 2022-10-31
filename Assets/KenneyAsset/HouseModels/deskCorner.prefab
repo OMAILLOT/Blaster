@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 4351454228213743086}
   - component: {fileID: 850233673935630923}
   - component: {fileID: 3181885823827232385}
-  m_Layer: 0
+  - component: {fileID: 589033727727064800}
+  m_Layer: 6
   m_Name: deskCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,6 +85,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &589033727727064800
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3974611648210888532}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7417775918060329284, guid: dfe79adda9124d041a76574d3036efeb, type: 3}
 --- !u!1 &8601435475732175475
 GameObject:
   m_ObjectHideFlags: 0
@@ -95,7 +110,7 @@ GameObject:
   - component: {fileID: 8253315038380754902}
   - component: {fileID: 1275786887608207859}
   - component: {fileID: 2638030906054248053}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: drawer
   m_TagString: Untagged
   m_Icon: {fileID: 0}

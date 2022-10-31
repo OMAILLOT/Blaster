@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6739958686360089037}
   - component: {fileID: 7341316497549811997}
   - component: {fileID: 6592641384836205113}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: doorRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,8 @@ GameObject:
   - component: {fileID: 2359172087224836553}
   - component: {fileID: 1662581525826416236}
   - component: {fileID: 3528106722748160678}
-  m_Layer: 0
+  - component: {fileID: -1446899741287924141}
+  m_Layer: 6
   m_Name: bookcaseClosedDoors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,6 +170,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-1446899741287924141
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3167902109060168563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 881232411662500714, guid: 6cdc165f98af4264a95eb13986f6a5d3, type: 3}
 --- !u!1 &6734749799587890284
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,7 +195,7 @@ GameObject:
   - component: {fileID: 5455690584926843752}
   - component: {fileID: 7872683096797602013}
   - component: {fileID: 8261039706119180022}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: doorLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}

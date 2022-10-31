@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 528112528162009569}
   - component: {fileID: 3529661155054763588}
   - component: {fileID: 1666076051569658510}
-  m_Layer: 0
+  - component: {fileID: 2606914979733748310}
+  m_Layer: 6
   m_Name: kitchenMicrowave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,6 +87,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2606914979733748310
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873675406546824027}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7724472393993585006, guid: a7caf0e4048fd92438d781d60d65d909, type: 3}
 --- !u!1 &4552922667174810921
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,7 +112,7 @@ GameObject:
   - component: {fileID: 1864527486744950225}
   - component: {fileID: 67661857805464576}
   - component: {fileID: 1305391131633515400}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Group
   m_TagString: Untagged
   m_Icon: {fileID: 0}

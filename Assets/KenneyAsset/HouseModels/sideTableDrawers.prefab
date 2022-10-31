@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4725464976231182959}
   - component: {fileID: 2846437260471554946}
   - component: {fileID: 6526096589848546795}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: drawerLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,8 @@ GameObject:
   - component: {fileID: 1015748960362356668}
   - component: {fileID: 4158917959824298009}
   - component: {fileID: 2185238199775864019}
-  m_Layer: 0
+  - component: {fileID: -5980908402686525275}
+  m_Layer: 6
   m_Name: sideTableDrawers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,6 +171,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-5980908402686525275
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383785498464650502}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 740470390537163181, guid: 45929e43f5edb384b9c19d7ffb579a2b, type: 3}
 --- !u!1 &5597177936038869486
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,7 +196,7 @@ GameObject:
   - component: {fileID: 7233483294599150636}
   - component: {fileID: 4254376217538062170}
   - component: {fileID: 4430869893431932933}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: drawerRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}

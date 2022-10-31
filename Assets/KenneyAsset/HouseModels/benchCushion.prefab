@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1664193190188904100}
   - component: {fileID: 2357561248295051521}
   - component: {fileID: 527847216024032715}
-  m_Layer: 0
+  - component: {fileID: -3240851413865747624}
+  m_Layer: 6
   m_Name: benchCushion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-3240851413865747624
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041175507493794846}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7067313602622566559, guid: 89a0f56ec13e20c4fbfa32c750157268, type: 3}

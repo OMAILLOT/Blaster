@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4630897719410278457}
   - component: {fileID: 6114802596975275764}
   - component: {fileID: 7828380568508327806}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: washerDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,8 @@ GameObject:
   - component: {fileID: 8279194158234879242}
   - component: {fileID: 4992874250984180399}
   - component: {fileID: 7110823053156400741}
-  m_Layer: 0
+  - component: {fileID: 3083015292049020290}
+  m_Layer: 6
   m_Name: washer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,3 +172,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3083015292049020290
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8768028625017774000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5297322414914779740, guid: 3b29d42792a117a478d3dc9951c945d0, type: 3}

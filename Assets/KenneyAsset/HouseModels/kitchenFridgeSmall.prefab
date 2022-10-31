@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2929863281628127436}
   - component: {fileID: 2235804895576371049}
   - component: {fileID: 4099361965543545763}
-  m_Layer: 0
+  - component: {fileID: -7256754051262039823}
+  m_Layer: 6
   m_Name: kitchenFridgeSmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,6 +86,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-7256754051262039823
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2585954098513181302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8518711332916918751, guid: 2833fab84d96c7f4fad8637cbf0d8403, type: 3}
 --- !u!1 &2873568820218269497
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,7 +111,7 @@ GameObject:
   - component: {fileID: 1104966762503708846}
   - component: {fileID: 5865940279128735946}
   - component: {fileID: 5150525396069384440}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: doorFridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1429064948441952284}
   - component: {fileID: 3828882946992776105}
   - component: {fileID: 3082314314157673858}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: doorLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 426342121597104825}
   - component: {fileID: 4432130430295220841}
   - component: {fileID: 224699738281888077}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: doorRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,8 @@ GameObject:
   - component: {fileID: 8709673410740118205}
   - component: {fileID: 5724394291763834136}
   - component: {fileID: 7536163810009913810}
-  m_Layer: 0
+  - component: {fileID: -6323408800562631589}
+  m_Layer: 6
   m_Name: kitchenFridgeLarge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,3 +254,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-6323408800562631589
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8328608709825804295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6442066583910877742, guid: 9bf14599882ff2d43a256d19e9bc8533, type: 3}

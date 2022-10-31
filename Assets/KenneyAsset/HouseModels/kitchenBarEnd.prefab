@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 3479277288287636679}
   - component: {fileID: 569489673520874338}
   - component: {fileID: 2306912416734640040}
-  m_Layer: 0
+  - component: {fileID: 86337132024347770}
+  m_Layer: 6
   m_Name: kitchenBarEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &86337132024347770
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4252296275716232829}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1526606659966238691, guid: 7e4ea2ab9ef5d0f44ba0c7631a541f80, type: 3}

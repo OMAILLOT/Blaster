@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 657264333386823120}
   - component: {fileID: 4517332495607347829}
   - component: {fileID: 1825152680651247295}
-  m_Layer: 0
+  - component: {fileID: -935618894626744204}
+  m_Layer: 6
   m_Name: bathroomMirror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,3 +86,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-935618894626744204
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167973221675462506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6843146688491161220, guid: e5432a57a122d5a47ba9f47e8bb2430c, type: 3}

@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 8714680423204445671}
   - component: {fileID: 5719316686657147458}
   - component: {fileID: 7546888867056002696}
-  m_Layer: 0
+  - component: {fileID: -8535953501849990393}
+  m_Layer: 6
   m_Name: lampRoundFloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-8535953501849990393
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8339280028790851421}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6370315918150080950, guid: bd87e6b6e4846084bafd56753badae3d, type: 3}

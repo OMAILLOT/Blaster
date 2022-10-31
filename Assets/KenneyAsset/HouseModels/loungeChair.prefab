@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 300958368012448894}
   - component: {fileID: 3711779318429334491}
   - component: {fileID: 1469885238368784145}
-  m_Layer: 0
+  - component: {fileID: 7285492783929226678}
+  m_Layer: 6
   m_Name: loungeChair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7285492783929226678
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109830158176513732}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7528303767759117007, guid: dbdb30a0309ca6340a890c3affee9803, type: 3}

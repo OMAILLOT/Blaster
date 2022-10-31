@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1709011654022153048}
   - component: {fileID: 2312733228432182525}
   - component: {fileID: 575490810290747447}
-  m_Layer: 0
+  - component: {fileID: 7120685682349154463}
+  m_Layer: 6
   m_Name: cabinetTelevisionDoors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,6 +86,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7120685682349154463
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088669293298194914}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1897389733928533576, guid: 4dc06087602a55f4b8568e8c7c7e99a0, type: 3}
 --- !u!1 &2316132038957240645
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,7 +111,7 @@ GameObject:
   - component: {fileID: 7675245645111677788}
   - component: {fileID: 5974957280860832652}
   - component: {fileID: 7815737539293112488}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: doorRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +195,7 @@ GameObject:
   - component: {fileID: 8988153679998751225}
   - component: {fileID: 6506492103183565388}
   - component: {fileID: 5021456757324672103}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: doorLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}

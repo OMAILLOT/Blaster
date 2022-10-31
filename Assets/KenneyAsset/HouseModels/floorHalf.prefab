@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 8503612124285188659}
   - component: {fileID: 4732506648243221910}
   - component: {fileID: 7370645401263063388}
-  m_Layer: 0
+  - component: {fileID: 1781597863214673291}
+  m_Layer: 6
   m_Name: floorHalf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1781597863214673291
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9027806855132962953}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7165503609601688357, guid: 90e4a403bf989d5489de820329ffcd7b, type: 3}

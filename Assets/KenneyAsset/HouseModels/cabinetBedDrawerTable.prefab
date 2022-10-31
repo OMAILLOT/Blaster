@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1494606579211593170}
   - component: {fileID: 8611097877024893943}
   - component: {fileID: 4803205201438762097}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: drawer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,8 @@ GameObject:
   - component: {fileID: 6509735694355685354}
   - component: {fileID: 7924331531438346319}
   - component: {fileID: 5340168285329532037}
-  m_Layer: 0
+  - component: {fileID: -3139599021197352333}
+  m_Layer: 6
   m_Name: cabinetBedDrawerTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,3 +170,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-3139599021197352333
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5844804471501096272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7106247605405081120, guid: a84c7e571bcea944e961764c92299b93, type: 3}

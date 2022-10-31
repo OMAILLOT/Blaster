@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 3057544824230314973}
   - component: {fileID: 2144082051804564600}
   - component: {fileID: 4189957397550921906}
-  m_Layer: 0
+  - component: {fileID: 472085172028639914}
+  m_Layer: 6
   m_Name: tile_slant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &472085172028639914
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2388390485206325607}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5750097034280812307, guid: dceccf58f6c8eee4cbbe7f423c34113d, type: 3}

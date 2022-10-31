@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 827853182813572659}
   - component: {fileID: 4382841915126088086}
   - component: {fileID: 1960768748614350172}
-  m_Layer: 0
+  - component: {fileID: -1731449336281319845}
+  m_Layer: 6
   m_Name: shower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,6 +88,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-1731449336281319845
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15464330354480265}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -303696274870375276, guid: 03b2fda848139bc45baca497eced2f91, type: 3}
 --- !u!1 &4390460771671956526
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,7 +113,7 @@ GameObject:
   - component: {fileID: 8523469259283045943}
   - component: {fileID: 5630008485906337511}
   - component: {fileID: 8123810930694399427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: doorRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +197,7 @@ GameObject:
   - component: {fileID: 6950979713092017298}
   - component: {fileID: 5080400156098940711}
   - component: {fileID: 6441639843426181388}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: doorLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}

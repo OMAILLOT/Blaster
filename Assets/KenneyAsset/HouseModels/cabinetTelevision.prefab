@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1339996799419172277}
   - component: {fileID: 2681687316782991888}
   - component: {fileID: 203703366261784282}
-  m_Layer: 0
+  - component: {fileID: 1512007964281842247}
+  m_Layer: 6
   m_Name: cabinetTelevision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1512007964281842247
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860918283956002575}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6698131779220323914, guid: 899a8b59caf3bc54d9fd5f510f5827c5, type: 3}

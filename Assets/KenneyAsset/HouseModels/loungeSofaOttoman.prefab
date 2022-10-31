@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 8189244543704381861}
   - component: {fileID: 5046794738594821632}
   - component: {fileID: 7056338361468961482}
-  m_Layer: 0
+  - component: {fileID: -4038760827341221435}
+  m_Layer: 6
   m_Name: loungeSofaOttoman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-4038760827341221435
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8857975919201903391}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8679693390562374656, guid: f1b466bfe467cae4ea9de97d69329955, type: 3}

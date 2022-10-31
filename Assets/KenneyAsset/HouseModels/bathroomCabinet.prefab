@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 760257638064003340}
   - component: {fileID: 7229649639817101107}
   - component: {fileID: 6037223148401871466}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,8 @@ GameObject:
   - component: {fileID: 3006569055427007467}
   - component: {fileID: 2168097520090586190}
   - component: {fileID: 4175494899152939140}
-  m_Layer: 0
+  - component: {fileID: -4825849801546070611}
+  m_Layer: 6
   m_Name: bathroomCabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,3 +170,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-4825849801546070611
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2518262113522731345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8444674310737149497, guid: 06b03d12a67651349838ea271cdc3c7b, type: 3}

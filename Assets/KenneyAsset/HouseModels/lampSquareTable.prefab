@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5143424812729966927}
   - component: {fileID: 8128652119369330410}
   - component: {fileID: 6280886785961417248}
-  m_Layer: 0
+  - component: {fileID: 5069063227702478806}
+  m_Layer: 6
   m_Name: lampSquareTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5069063227702478806
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5488424706795338741}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5191783096846170548, guid: fb53b8e4749e4ea4084397486a917482, type: 3}

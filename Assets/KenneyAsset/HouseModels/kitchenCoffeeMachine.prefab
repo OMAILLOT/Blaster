@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1295742856474806084}
   - component: {fileID: 2762040099035236577}
   - component: {fileID: 121680340043545643}
-  m_Layer: 0
+  - component: {fileID: -3978392594532918982}
+  m_Layer: 6
   m_Name: kitchenCoffeeMachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,6 +86,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-3978392594532918982
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923239281550040574}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3538097580775983100, guid: f4479e39294ecb54192fffd84aaa8c55, type: 3}
 --- !u!1 &8934060141718025283
 GameObject:
   m_ObjectHideFlags: 0
@@ -96,7 +111,7 @@ GameObject:
   - component: {fileID: 4150561967719488552}
   - component: {fileID: 275150617806658878}
   - component: {fileID: 3920151513682190311}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mug
   m_TagString: Untagged
   m_Icon: {fileID: 0}

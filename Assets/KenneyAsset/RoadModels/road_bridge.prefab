@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5242911856353622488}
   - component: {fileID: 9182077796303451773}
   - component: {fileID: 6379837409915028151}
-  m_Layer: 0
+  - component: {fileID: 1840569666522022188}
+  m_Layer: 6
   m_Name: road_bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,3 +87,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1840569666522022188
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4866491390211941218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9091937190318862624, guid: 8eeef06e48de7784f9106551941b53fd, type: 3}

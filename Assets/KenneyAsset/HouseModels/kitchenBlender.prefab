@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3944968417535415384}
   - component: {fileID: 3461290776358617189}
   - component: {fileID: 1839287996409341295}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: blenderTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,8 @@ GameObject:
   - component: {fileID: 7577776087466020696}
   - component: {fileID: 6811255347644432637}
   - component: {fileID: 8746702888027518007}
-  m_Layer: 0
+  - component: {fileID: -4800374370427610641}
+  m_Layer: 6
   m_Name: kitchenBlender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,6 +170,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-4800374370427610641
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7089364688184333794}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5394979268745966657, guid: 532095250f265764ca1c9167731f273a, type: 3}
 --- !u!1 &8367373678630328301
 GameObject:
   m_ObjectHideFlags: 0
@@ -180,7 +195,7 @@ GameObject:
   - component: {fileID: 5613630994485468109}
   - component: {fileID: 1219071110009281541}
   - component: {fileID: 4836738775777820743}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: blenderCup
   m_TagString: Untagged
   m_Icon: {fileID: 0}

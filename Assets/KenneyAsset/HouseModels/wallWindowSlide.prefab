@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4892876282943947729}
   - component: {fileID: 6854721248020427854}
   - component: {fileID: 2312798614691463395}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: windowBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,8 @@ GameObject:
   - component: {fileID: 1646541625944483260}
   - component: {fileID: 2411232812911798809}
   - component: {fileID: 473612701974617811}
-  m_Layer: 0
+  - component: {fileID: 10308865161533448}
+  m_Layer: 6
   m_Name: wallWindowSlide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,6 +172,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &10308865161533448
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130871461972344582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5480972452418580111, guid: 1fadac0d570e5964db85f3fe0ed523a0, type: 3}
 --- !u!1 &6655833725647912091
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,7 +197,7 @@ GameObject:
   - component: {fileID: 8433507002590573195}
   - component: {fileID: 7827940812268355982}
   - component: {fileID: 5610259959129388530}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: windowTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}

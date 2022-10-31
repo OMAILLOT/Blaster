@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6376000151100635123}
   - component: {fileID: 6923341704835000099}
   - component: {fileID: 6811969886505274375}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: doorRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,8 @@ GameObject:
   - component: {fileID: 2686476822332319735}
   - component: {fileID: 1362220118322391122}
   - component: {fileID: 3820007629312220312}
-  m_Layer: 0
+  - component: {fileID: -6672786322560804997}
+  m_Layer: 6
   m_Name: showerRound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,6 +171,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-6672786322560804997
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3315661714745228621}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2735182143998606774, guid: ff3960f59e7037148b074348242ccf16, type: 3}
 --- !u!1 &5093337916245725958
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,7 +196,7 @@ GameObject:
   - component: {fileID: 5956921091265766984}
   - component: {fileID: 1540760775564124888}
   - component: {fileID: 1937791441181220114}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: faucet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +279,7 @@ GameObject:
   - component: {fileID: 5639561449869964630}
   - component: {fileID: 7544758065303283427}
   - component: {fileID: 8597412594956634312}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: doorLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}

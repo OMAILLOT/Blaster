@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 9005885208876356693}
   - component: {fileID: 5428121181901954032}
   - component: {fileID: 7831891957383884602}
-  m_Layer: 0
+  - component: {fileID: 8919904757882870538}
+  m_Layer: 6
   m_Name: ceilingFan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,3 +86,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8919904757882870538
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8624538753764249327}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8700225137327136677, guid: 9e8801c9e008da04698fc91ec0efdbd3, type: 3}

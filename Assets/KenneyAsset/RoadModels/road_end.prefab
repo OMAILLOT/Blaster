@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 4137932184463763686}
   - component: {fileID: 1063756543143536451}
   - component: {fileID: 2965567274389443465}
-  m_Layer: 0
+  - component: {fileID: 5996668728132670240}
+  m_Layer: 6
   m_Name: road_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,3 +87,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5996668728132670240
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3613914166469735004}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5006720080491887505, guid: d0218a6556a64f74791297e33571845d, type: 3}

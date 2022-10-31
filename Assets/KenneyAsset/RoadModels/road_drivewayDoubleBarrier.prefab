@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2637630938247261171}
   - component: {fileID: 1384123272064525398}
   - component: {fileID: 3805985345566216348}
-  m_Layer: 0
+  - component: {fileID: -1276001021367651272}
+  m_Layer: 6
   m_Name: road_drivewayDoubleBarrier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-1276001021367651272
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3445658273082945865}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8475957940383677393, guid: 7728b86b103871a43aa0f7bf8661526a, type: 3}

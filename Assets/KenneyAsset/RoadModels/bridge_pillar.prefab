@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 769287476669537997}
   - component: {fileID: 4396310893865226600}
   - component: {fileID: 1938274343424664994}
-  m_Layer: 0
+  - component: {fileID: 7804471639990601320}
+  m_Layer: 6
   m_Name: bridge_pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7804471639990601320
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137041268554007671}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9135420506334699249, guid: 56593780dcd5732478225166d08b66fc, type: 3}

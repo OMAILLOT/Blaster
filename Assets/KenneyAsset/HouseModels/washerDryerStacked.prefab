@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 783929531360303730}
   - component: {fileID: 4417688548063598039}
   - component: {fileID: 1921417588868686109}
-  m_Layer: 0
+  - component: {fileID: -954974862737330942}
+  m_Layer: 6
   m_Name: washerDryerStacked
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,6 +88,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-954974862737330942
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120123216338026696}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1080882445831732491, guid: cd72d2a94df5b53438fe7578d0a3da95, type: 3}
 --- !u!1 &5673587737034853180
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,7 +113,7 @@ GameObject:
   - component: {fileID: 4053459606236749633}
   - component: {fileID: 3231522303534166412}
   - component: {fileID: 1488288352686667782}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: washerDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +198,7 @@ GameObject:
   - component: {fileID: 6664497964779412499}
   - component: {fileID: 5922069976232454962}
   - component: {fileID: 5260194619840337801}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: dryerDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

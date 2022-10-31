@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5376313172064807702}
   - component: {fileID: 9021655414850331827}
   - component: {fileID: 6545890270539599993}
-  m_Layer: 0
+  - component: {fileID: 3987033511680790630}
+  m_Layer: 6
   m_Name: lampWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3987033511680790630
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4744349744793219500}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2986479666990330407, guid: 0b7bb0d9c22baa648922fb631097abc9, type: 3}
