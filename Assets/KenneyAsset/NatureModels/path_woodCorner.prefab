@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7849752985232219284}
   - component: {fileID: 5407446056994924638}
   - component: {fileID: -595524293536927601}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: path_woodCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}

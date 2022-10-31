@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2431409991398720242}
   - component: {fileID: 457939758110799416}
   - component: {fileID: 2466434987850019575}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: plant_bushLargeTriangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

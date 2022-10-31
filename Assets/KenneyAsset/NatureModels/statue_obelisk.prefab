@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1635005370338254734}
   - component: {fileID: 3554540708986547012}
   - component: {fileID: -3240032676574140811}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: statue_obelisk
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5293861058852454774}
   - component: {fileID: 7967824162745775548}
   - component: {fileID: 6714565756632484162}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: lily_large
   m_TagString: Untagged
   m_Icon: {fileID: 0}

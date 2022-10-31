@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6587189313332524150}
   - component: {fileID: 8975272247514087612}
   - component: {fileID: 2201552648490118599}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: plant_bushSmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

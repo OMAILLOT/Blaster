@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3009538876007974244}
   - component: {fileID: 1018078362532311470}
   - component: {fileID: -196886227203014173}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: statue_ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}

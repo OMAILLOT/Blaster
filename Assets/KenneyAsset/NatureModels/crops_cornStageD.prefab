@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3212054614857406842}
   - component: {fileID: 5817388173224058716}
   - component: {fileID: 4206506062469864109}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: corn 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 7547081522224500485}
   - component: {fileID: 5717436143864904655}
   - component: {fileID: 6481103579543917052}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crops_cornStageD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 8298691371221361097}
   - component: {fileID: 1811851345346459351}
   - component: {fileID: 9075470135730139595}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: corn 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 5328440473687600746}
   - component: {fileID: 6175222320571036755}
   - component: {fileID: 4091545478919833983}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: corn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 7080607446036881821}
   - component: {fileID: 1216895039561146240}
   - component: {fileID: 787874649494386561}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: corn 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

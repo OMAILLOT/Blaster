@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3715810623204637950}
   - component: {fileID: 1474297049396332596}
   - component: {fileID: -7816553959216301832}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree_palmBend
   m_TagString: Untagged
   m_Icon: {fileID: 0}

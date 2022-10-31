@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4391967985614638849}
   - component: {fileID: 1952188208349592523}
   - component: {fileID: -6558091084342914509}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fence_planks
   m_TagString: Untagged
   m_Icon: {fileID: 0}

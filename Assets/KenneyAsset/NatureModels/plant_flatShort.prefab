@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5823049887090188771}
   - component: {fileID: 8587052002544145705}
   - component: {fileID: -5936445227923649326}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: plant_flatShort
   m_TagString: Untagged
   m_Icon: {fileID: 0}

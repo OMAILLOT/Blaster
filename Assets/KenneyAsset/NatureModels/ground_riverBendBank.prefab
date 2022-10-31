@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3692105244125180969}
   - component: {fileID: 1501960790215803107}
   - component: {fileID: 3500137470951830398}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground_riverBendBank
   m_TagString: Untagged
   m_Icon: {fileID: 0}

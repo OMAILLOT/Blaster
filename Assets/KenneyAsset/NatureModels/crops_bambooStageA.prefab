@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1032557278315681382}
   - component: {fileID: 3004065974070600364}
   - component: {fileID: -1853472912759787774}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crops_bambooStageA
   m_TagString: Untagged
   m_Icon: {fileID: 0}

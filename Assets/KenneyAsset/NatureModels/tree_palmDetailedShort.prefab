@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 64244736995718694}
   - component: {fileID: 779998856901035559}
   - component: {fileID: 107855647699640826}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: leafs 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 896752017484641316}
   - component: {fileID: 4388260800522273556}
   - component: {fileID: 5456680497760128431}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: leafs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 8005338682848856062}
   - component: {fileID: 5259177798260929332}
   - component: {fileID: -3341280838172016139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree_palmDetailedShort
   m_TagString: Untagged
   m_Icon: {fileID: 0}

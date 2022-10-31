@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 644678738811159593}
   - component: {fileID: 3393089225598890211}
   - component: {fileID: -4438832122349533038}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground_riverCross
   m_TagString: Untagged
   m_Icon: {fileID: 0}

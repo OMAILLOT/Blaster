@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1635672611201116969}
   - component: {fileID: 3555562060977446883}
   - component: {fileID: -6760867641332216606}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: statue_columnDamaged
   m_TagString: Untagged
   m_Icon: {fileID: 0}

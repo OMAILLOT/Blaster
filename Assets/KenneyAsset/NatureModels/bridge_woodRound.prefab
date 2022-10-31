@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2598712318164489859}
   - component: {fileID: 285007004801475145}
   - component: {fileID: 8628518775939383243}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bridge_woodRound
   m_TagString: Untagged
   m_Icon: {fileID: 0}

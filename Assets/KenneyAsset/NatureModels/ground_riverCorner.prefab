@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 935310828708538334}
   - component: {fileID: 3106942197601096468}
   - component: {fileID: -8881390580397594374}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground_riverCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}

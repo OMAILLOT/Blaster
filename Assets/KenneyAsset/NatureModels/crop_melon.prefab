@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2898918960613847651}
   - component: {fileID: 1143896878154811049}
   - component: {fileID: -3860731505694480687}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crop_melon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

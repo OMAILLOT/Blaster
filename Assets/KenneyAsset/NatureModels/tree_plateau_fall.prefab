@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5036250909501404115}
   - component: {fileID: 7061834213099652889}
   - component: {fileID: -3116269366026305788}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree_plateau_fall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

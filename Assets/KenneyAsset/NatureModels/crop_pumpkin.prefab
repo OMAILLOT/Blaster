@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1098809843920888820}
   - component: {fileID: 2944007198126872382}
   - component: {fileID: 7526963612439078025}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crop_pumpkin
   m_TagString: Untagged
   m_Icon: {fileID: 0}

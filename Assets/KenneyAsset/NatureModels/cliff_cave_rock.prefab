@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7853388348126158735}
   - component: {fileID: 5411110540910046021}
   - component: {fileID: 3726251159746210304}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cliff_cave_rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5915132040613123900}
   - component: {fileID: 8498910464163849206}
   - component: {fileID: 8090984182895473045}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground_pathBendBank
   m_TagString: Untagged
   m_Icon: {fileID: 0}

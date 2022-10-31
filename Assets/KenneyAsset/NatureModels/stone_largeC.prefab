@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7133581803218865308}
   - component: {fileID: 4979685495679088726}
   - component: {fileID: 4675184941257900336}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: stone_largeC
   m_TagString: Untagged
   m_Icon: {fileID: 0}

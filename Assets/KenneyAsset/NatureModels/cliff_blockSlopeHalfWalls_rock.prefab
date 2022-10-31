@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2299284388405557613}
   - component: {fileID: 4038679596425760167}
   - component: {fileID: -431641370938939081}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cliff_blockSlopeHalfWalls_rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}

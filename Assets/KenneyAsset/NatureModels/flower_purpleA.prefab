@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7859641139793610847}
   - component: {fileID: 5402061914515782805}
   - component: {fileID: -8969461920555355293}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: flower_purpleA
   m_TagString: Untagged
   m_Icon: {fileID: 0}

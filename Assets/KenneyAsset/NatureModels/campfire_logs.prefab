@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7006590957406788027}
   - component: {fileID: 5105003984291294577}
   - component: {fileID: 1143501766946487431}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: campfire_logs
   m_TagString: Untagged
   m_Icon: {fileID: 0}

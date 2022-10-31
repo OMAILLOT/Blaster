@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5456029147788361129}
   - component: {fileID: 7805656056055122275}
   - component: {fileID: 94108814493540831}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: canoe_paddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

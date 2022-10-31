@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2073318140992321330}
   - component: {fileID: 4260704953232294904}
   - component: {fileID: -1575222746165548366}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: campfire_planks
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 656475578927462108}
   - component: {fileID: 3384651135827591702}
   - component: {fileID: -7752744422849075170}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bridge_stoneRound
   m_TagString: Untagged
   m_Icon: {fileID: 0}

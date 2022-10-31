@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 679130179406323238}
   - component: {fileID: 3352989318247492332}
   - component: {fileID: 1924202606052396381}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cliff_block_stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4825335189130483143}
   - component: {fileID: 7283445947680448781}
   - component: {fileID: -6213600074034233180}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: platform_beach
   m_TagString: Untagged
   m_Icon: {fileID: 0}

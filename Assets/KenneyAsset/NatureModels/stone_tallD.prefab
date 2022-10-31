@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3354939373639478199}
   - component: {fileID: 678870210791366525}
   - component: {fileID: -4956668884359113979}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: stone_tallD
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3401934770452409909}
   - component: {fileID: 635833210626726655}
   - component: {fileID: 8255032910793288179}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cliff_corner_stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}

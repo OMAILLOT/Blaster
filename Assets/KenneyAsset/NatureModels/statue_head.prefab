@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1174946659999503772}
   - component: {fileID: 4011238917207335254}
   - component: {fileID: 7165366635433766449}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: statue_head
   m_TagString: Untagged
   m_Icon: {fileID: 0}

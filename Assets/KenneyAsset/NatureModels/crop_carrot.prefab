@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8772055369594438290}
   - component: {fileID: 6798305306233075288}
   - component: {fileID: -4968482041868054590}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crop_carrot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

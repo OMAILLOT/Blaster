@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2952830897255051483}
   - component: {fileID: 1089421716704166929}
   - component: {fileID: -4070076456343838257}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crops_dirtDoubleRowCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}

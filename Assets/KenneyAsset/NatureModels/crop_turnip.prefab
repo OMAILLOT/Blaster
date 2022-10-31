@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7378911760965220959}
   - component: {fileID: 4720861403531464341}
   - component: {fileID: -5648923066644321212}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crop_turnip
   m_TagString: Untagged
   m_Icon: {fileID: 0}

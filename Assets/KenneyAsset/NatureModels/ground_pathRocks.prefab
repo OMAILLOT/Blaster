@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2492776097137240440}
   - component: {fileID: 395448079008128434}
   - component: {fileID: -7000391725190557559}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground_pathRocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}

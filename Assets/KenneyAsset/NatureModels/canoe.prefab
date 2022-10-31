@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7953394120991999010}
   - component: {fileID: 5297595016568926440}
   - component: {fileID: 4559136521497717969}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: canoe
   m_TagString: Untagged
   m_Icon: {fileID: 0}

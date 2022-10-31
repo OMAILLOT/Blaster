@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1013072498252950996}
   - component: {fileID: 3020753545139149086}
   - component: {fileID: 2334167471182704572}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree_small_fall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

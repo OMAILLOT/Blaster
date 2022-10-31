@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2049246352222341570}
   - component: {fileID: 4293221249446493448}
   - component: {fileID: -1983536856548706255}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground_riverSplit
   m_TagString: Untagged
   m_Icon: {fileID: 0}

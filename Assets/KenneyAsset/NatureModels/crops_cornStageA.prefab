@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2715980234174348539}
   - component: {fileID: 168303258356500529}
   - component: {fileID: -9033675033466814483}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crops_cornStageA
   m_TagString: Untagged
   m_Icon: {fileID: 0}

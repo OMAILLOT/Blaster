@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2166097802409426422}
   - component: {fileID: 4173553932394481980}
   - component: {fileID: 7995141408354583426}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cliff_topDiagonal_stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}

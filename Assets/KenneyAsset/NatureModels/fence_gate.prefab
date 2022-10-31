@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5882704764973290175}
   - component: {fileID: 3683298401008533501}
   - component: {fileID: 3646132609968716464}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: gate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 7260718633283650608}
   - component: {fileID: 4839036887475581178}
   - component: {fileID: 6221012477177322223}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: fence_gate
   m_TagString: Untagged
   m_Icon: {fileID: 0}

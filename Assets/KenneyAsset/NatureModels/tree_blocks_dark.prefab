@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3021174905083630596}
   - component: {fileID: 1011526337971970254}
   - component: {fileID: -5858033014091648841}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tree_blocks_dark
   m_TagString: Untagged
   m_Icon: {fileID: 0}

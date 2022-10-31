@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3260929497936770476}
   - component: {fileID: 767249453065027942}
   - component: {fileID: 5644298238780889220}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: crops_dirtSingle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

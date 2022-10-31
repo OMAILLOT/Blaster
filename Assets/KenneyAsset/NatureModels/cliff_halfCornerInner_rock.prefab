@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6665554301557870402}
   - component: {fileID: 8891294355642383240}
   - component: {fileID: 2921983178046791038}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cliff_halfCornerInner_rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}

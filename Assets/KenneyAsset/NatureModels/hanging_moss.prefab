@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6350326789859852379}
   - component: {fileID: 9206505356940719249}
   - component: {fileID: 3180649390562486223}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: hanging_moss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
