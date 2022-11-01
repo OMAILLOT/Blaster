@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float sensibility;
     [SerializeField] GameObject playerHead;
     [SerializeField] private Rigidbody rb;
+    [SerializeField] private float rayIsGroundedDistance;
+    [SerializeField] private float jumpDelay;
    
     private PlayerInput playerInput;
 
@@ -21,6 +23,7 @@ public class PlayerController : MonoBehaviour
     private bool isWalking;
     private bool isSidedWalking;
     private bool isJumping;
+    private bool canJump = true;
 
     private float baseSpeed;
     private float baseSidedSpeed;
@@ -59,7 +62,6 @@ public class PlayerController : MonoBehaviour
     {        
 
         transform.RotateAround(transform.position, new Vector3(0, 1, 0), currentMouseValue.x * sensibility * Time.fixedDeltaTime);
-        print(playerHead.transform.localRotation.x * 100);
         playerHead.transform.Rotate(Vector3.left, currentMouseValue.y * (sensibility / 1.5f) * Time.fixedDeltaTime,Space.Self);
 
         if (isWalking)
@@ -73,7 +75,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        bool hit = Physics.Raycast(transform.position, Vector3.down, 1.2f, groundLayerMask);
+        bool hit = Physics.Raycast(transform.position, Vector3.down, rayIsGroundedDistance, groundLayerMask);
         isGrounded = hit;
 
             if (hit)
@@ -111,10 +113,13 @@ public class PlayerController : MonoBehaviour
     void OnJumpPressed(InputAction.CallbackContext context)
     {
         isJumping = context.ReadValue<float>() > 0;
-        if (isJumping && isGrounded)
+        if (isJumping && isGrounded && canJump)
         {
+            canJump = false;
             rb.AddForce(0, jumpForce * 1000, 0);
+            StartCoroutine(waitBeforeJumpAutorizeToJump());
         }
+
     }
     void GetValueMouse(InputAction.CallbackContext context)
     {
@@ -135,6 +140,13 @@ public class PlayerController : MonoBehaviour
 
 
         }
+
+    }
+
+    IEnumerator waitBeforeJumpAutorizeToJump()
+    {
+        yield return new WaitForSeconds(jumpDelay);
+        canJump = true;
 
     }
 }
