@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float rayIsGroundedDistance;
     [SerializeField] private float jumpDelay;
+    [SerializeField] private float divideSpeedWhenJump;
+    [SerializeField] private GameObject currentGun;
+    [SerializeField] private GameObject crosshair;
    
     private PlayerInput playerInput;
 
@@ -27,8 +31,13 @@ public class PlayerController : MonoBehaviour
 
     private float baseSpeed;
     private float baseSidedSpeed;
-    private bool isGrounded;
     private float baseDrag;
+    private float baseSensibility;
+
+    private bool isGrounded;
+    private bool isScoping;
+    bool stopScope = false;
+
 
 
 
@@ -51,16 +60,23 @@ public class PlayerController : MonoBehaviour
         playerInput.Player.Jump.started += OnJumpPressed;
         playerInput.Player.Jump.canceled += OnJumpPressed;
 
+        playerInput.Player.Shoot.started += OnShootPressed;
+        playerInput.Player.Shoot.canceled += OnShootPressed;
+
+        playerInput.Player.Scope.started += OnScopePressed;
+        playerInput.Player.Scope.canceled += OnScopePressed;
+
+
         Cursor.lockState = CursorLockMode.Locked;
 
         baseSpeed = speed;
         baseSidedSpeed = sidedSpeed;
         baseDrag = rb.drag;
+        baseSensibility = sensibility;
     }
 
     void FixedUpdate()
     {        
-
         transform.RotateAround(transform.position, new Vector3(0, 1, 0), currentMouseValue.x * sensibility * Time.fixedDeltaTime);
         playerHead.transform.Rotate(Vector3.left, currentMouseValue.y * (sensibility / 1.5f) * Time.fixedDeltaTime,Space.Self);
 
@@ -86,8 +102,8 @@ public class PlayerController : MonoBehaviour
             } else
             {
                 rb.drag = 0;
-                speed = baseSpeed / 5;
-                sidedSpeed = baseSidedSpeed / 5;
+                speed = baseSpeed / divideSpeedWhenJump;
+                sidedSpeed = baseSidedSpeed / divideSpeedWhenJump;
             }
     }
 
@@ -124,7 +140,8 @@ public class PlayerController : MonoBehaviour
     void GetValueMouse(InputAction.CallbackContext context)
     {
 
-            currentMouseValue = context.ReadValue<Vector2>();
+        currentMouseValue = context.ReadValue<Vector2>();
+
         if (playerHead.transform.localRotation.x * 100 >= 70 &&
             currentMouseValue.y > 0)
         {
@@ -137,16 +154,51 @@ public class PlayerController : MonoBehaviour
         {
             currentMouseValue.y = 0f;
             if (playerHead.transform.localRotation.x * 100 <= -80) playerHead.transform.Rotate(Vector3.right, -69.9f);
-
-
         }
 
     }
+
+    void OnShootPressed(InputAction.CallbackContext context)
+    {
+
+    }
+
+    void OnScopePressed(InputAction.CallbackContext context)
+    {
+        isScoping = context.ReadValue<float>() > 0;
+        if (isScoping && !stopScope)
+        {
+            stopScope = true;
+            currentGun.transform.DOLocalMoveX(0, 0.5f).OnComplete(() =>
+            {
+                crosshair.SetActive(false);
+                speed /= 2f;
+                sidedSpeed /= 2f;
+                sensibility /= 1.5f;
+            });/*.OnKill(() =>
+            {
+                crosshair.SetActive(true);
+                speed = baseSpeed;
+                sensibility = baseSensibility;
+
+            });*/
+        } else
+        {
+            currentGun.transform.DOKill();
+            crosshair.SetActive(true);
+            speed = baseSpeed;
+            sidedSpeed = baseSidedSpeed;
+            sensibility = baseSensibility;
+            currentGun.transform.DOLocalMoveX(0.3f, 0.5f).OnComplete(() => {
+                stopScope = false;
+            });
+
+        }
+    } 
 
     IEnumerator waitBeforeJumpAutorizeToJump()
     {
         yield return new WaitForSeconds(jumpDelay);
         canJump = true;
-
     }
 }
