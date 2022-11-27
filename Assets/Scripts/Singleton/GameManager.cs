@@ -16,7 +16,7 @@ public class GameManager : MonoSingleton<GameManager>
     {
         gameState = GameState.START;
 
-        UIManager.Instance.Init();
+        //UIManager.Instance.Init();
     }
 
     private void Update()

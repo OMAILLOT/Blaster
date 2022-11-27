@@ -141,6 +141,10 @@ public class PlayerController : MonoBehaviour
     {
 
         currentMouseValue = context.ReadValue<Vector2>();
+        /*        print(transform.eulerAngles.x);
+                playerHead.transform.Rotate(-currentMouseValue.y, 0, 0, Space.Self);
+               playerHead.transform.eulerAngles = new Vector3(Mathf.Clamp(transform.eulerAngles.normalized.x, -70, 70), transform.eulerAngles.y, transform.eulerAngles.z);
+        */
 
         if (playerHead.transform.localRotation.x * 100 >= 70 &&
             currentMouseValue.y > 0)
