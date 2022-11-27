@@ -48608,10 +48608,6 @@ PrefabInstance:
       propertyPath: crosshair
       value: 
       objectReference: {fileID: 1485215492}
-    - target: {fileID: 767637621, guid: a5eb59ed69c22084d877e384d0cf175e, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6055019437386197640, guid: a5eb59ed69c22084d877e384d0cf175e,
         type: 3}
       propertyPath: m_Name
