@@ -14,36 +14,33 @@ public class GameManager : MonoSingleton<GameManager>
 
     void Awake()
     {
+        DontDestroyOnLoad(gameObject);
+
         gameState = GameState.START;
 
         UIManager.Instance.Init();
     }
 
-    private void Update()
-    {
-        if (Input.GetKey(KeyCode.L))// A modif avec le new input system
-        {
-            ReloadScene();
-        }
-    }
-    public void StartScene(Scene newScene)
+    public void StartScene(string sceneName)
     {
         gameState = GameState.PLAY;
 
-        SceneManager.LoadScene(newScene.name);
+        SceneManager.LoadScene(sceneName);
 
         UIManager.Instance.StartGame();
     }
 
     public void EndGame()
     {
-        gameState = GameState.PLAY;
-
+        gameState = GameState.END;
     }
 
     public void QuitApplication()
     {
         Application.Quit();
+
+        UIGameManager.Instance.HandleEnd();
+
     }
 
     public void ReloadScene()

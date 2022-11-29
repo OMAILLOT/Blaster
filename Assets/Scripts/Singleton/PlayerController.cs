@@ -1,13 +1,14 @@
+using BaseTemplate.Behaviours;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoSingleton<PlayerController>
 {
+    public float Speed, SidedSpeed;
+
     [SerializeField] private LayerMask groundLayerMask;
-    [SerializeField] private float speed;
-    [SerializeField] private float sidedSpeed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float sensibility;
     [SerializeField] GameObject playerHead;
@@ -50,8 +51,8 @@ public class PlayerController : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
 
-        baseSpeed = speed;
-        baseSidedSpeed = sidedSpeed;
+        baseSpeed = Speed;
+        baseSidedSpeed = SidedSpeed;
         baseDrag = rb.drag;
     }
 
@@ -59,17 +60,16 @@ public class PlayerController : MonoBehaviour
     {        
 
         transform.RotateAround(transform.position, new Vector3(0, 1, 0), currentMouseValue.x * sensibility * Time.fixedDeltaTime);
-        print(playerHead.transform.localRotation.x * 100);
         playerHead.transform.Rotate(Vector3.left, currentMouseValue.y * (sensibility / 1.5f) * Time.fixedDeltaTime,Space.Self);
 
         if (isWalking)
         {
-            rb.velocity += transform.forward * speed * Time.fixedDeltaTime * currentSpeedValue;
+            rb.velocity += transform.forward * Speed * Time.fixedDeltaTime * currentSpeedValue;
         }
 
         if (isSidedWalking)
         {
-            rb.velocity += transform.right * sidedSpeed * Time.fixedDeltaTime * currentSidedSpeedValue;
+            rb.velocity += transform.right * SidedSpeed * Time.fixedDeltaTime * currentSidedSpeedValue;
         }
 
 
@@ -79,13 +79,13 @@ public class PlayerController : MonoBehaviour
             if (hit)
             {
                 rb.drag = baseDrag;
-                speed = baseSpeed;
-                sidedSpeed = baseSidedSpeed;
+                Speed = baseSpeed;
+                SidedSpeed = baseSidedSpeed;
             } else
             {
                 rb.drag = 0;
-                speed = baseSpeed / 5;
-                sidedSpeed = baseSidedSpeed / 5;
+                Speed = baseSpeed / 5;
+                SidedSpeed = baseSidedSpeed / 5;
             }
     }
 

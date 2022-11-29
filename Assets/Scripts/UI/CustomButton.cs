@@ -24,8 +24,6 @@ public class CustomButton : Button
         base.OnPointerUp(eventData);
 
         rt.DOScale(Vector3.one, timeOfEffects).SetEase(Ease.OutExpo);
-
-       // _afterClickAnim.Play(); // Open gif in fullscreen
     }
 
     public override void OnPointerEnter(PointerEventData eventData)
