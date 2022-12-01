@@ -9,7 +9,7 @@ public class EndCanvas : MonoBehaviour
 
     public void Init()
     {
-        _finalTime.text = UIGameManager.Instance.GameCanvas.MapTime.ToString("NN") + "s";
+        _finalTime.text = UIManager.Instance.GameCanvas.MapTime.ToString("NN") + "s";
         _amountTarget.text = 20 + "/" + 20;
     }
 }

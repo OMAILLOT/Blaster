@@ -1,10 +1,9 @@
 
 using BaseTemplate.Behaviours;
 using DG.Tweening;
-using UnityEditor.SearchService;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Scene = UnityEngine.SceneManagement.Scene;
 
 public enum GameState { START, PLAY, END }
 
@@ -12,53 +11,52 @@ public class GameManager : MonoSingleton<GameManager>
 {
     public GameState gameState;
 
+
     void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+
+        DontDestroyOnLoad(transform.parent.gameObject);
+
 
         gameState = GameState.START;
 
         UIManager.Instance.Init();
     }
 
-    public void StartScene(string sceneName)
+    public void LoadScene(string sceneName) => StartScene(sceneName);
+
+    void StartScene(string sceneName)
     {
         gameState = GameState.PLAY;
 
-        SceneManager.LoadScene(sceneName);
+        UIManager.Instance._loadingCanvas.DOFade(1, 0.2f).OnComplete(() =>
+        {
+            SceneManager.LoadScene(sceneName);
+            UIManager.Instance.StartGame();
+        });
+    }
 
-        UIManager.Instance.StartGame();
+    public void MenuScene()
+    {
+        gameState = GameState.START;
+
+        UIManager.Instance._loadingCanvas.DOFade(1, 0.2f).OnComplete(() =>
+        {
+            SceneManager.LoadScene("Menu");
+            UIManager.Instance.StartMenu();
+        });
     }
 
     public void EndGame()
     {
         gameState = GameState.END;
+
+        UIManager.Instance.HandleEnd();
     }
 
     public void QuitApplication()
     {
         Application.Quit();
-
-        UIGameManager.Instance.HandleEnd();
-
     }
 
-    public void ReloadScene()
-    {
-        UIManager.Instance.LoadingCanvas.DOFade(1, 0.2f).OnComplete(() =>
-        {
-            DOTween.KillAll();
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.name);
-        });
-    }
-
-    public void LoadScene(string sceneName)
-    {
-        UIManager.Instance.LoadingCanvas.DOFade(1, 0.2f).OnComplete(() =>
-        {
-            DOTween.KillAll();
-            SceneManager.LoadScene(sceneName);
-        });
-    }
 }

@@ -9,11 +9,9 @@ public class GameCanvas : MonoBehaviour
     public float MapTime;
     public bool IsRunning;
 
-    float _tempSpeed,_tempSidedSpeed;
-
     public void Init()
     {
-        _amountTarget.text = 20 + "/" + 20; //Mettre valeur 
+        _amountTarget.text = 20 + "/" + 20;
         RefreshAmmo();
     }
 
@@ -24,26 +22,15 @@ public class GameCanvas : MonoBehaviour
 
     public IEnumerator StartCountdown()
     {
-        yield return new WaitForSeconds(2);
-
-        _tempSpeed = PlayerController.Instance.Speed;
-        _tempSidedSpeed = PlayerController.Instance.SidedSpeed;
-
-
-        PlayerController.Instance.Speed = 0;
-        PlayerController.Instance.SidedSpeed = 0;
-
-        for (int i = 3; i > 0; i--)
+        for (int i = 5; i > 0; i--)
         {
             _startCountdown.text = i.ToString();
             yield return new WaitForSeconds(1);
         }
         _startCountdown.text = "";
         _timer.gameObject.GetComponent<CanvasGroup>().DOFade(1, .2f);
-        IsRunning = true;
 
-        PlayerController.Instance.Speed = _tempSpeed;
-        PlayerController.Instance.SidedSpeed = _tempSidedSpeed;
+        IsRunning = true;
     }
 
     private void Update()
