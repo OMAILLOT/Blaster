@@ -1,10 +1,9 @@
 
 using BaseTemplate.Behaviours;
 using DG.Tweening;
-using UnityEditor.SearchService;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using Scene = UnityEngine.SceneManagement.Scene;
 
 public enum GameState { START, PLAY, END }
 
@@ -12,33 +11,47 @@ public class GameManager : MonoSingleton<GameManager>
 {
     public GameState gameState;
 
+
     void Awake()
     {
+
+        DontDestroyOnLoad(transform.parent.gameObject);
+
+
         gameState = GameState.START;
 
         //UIManager.Instance.Init();
     }
 
-    private void Update()
-    {
-        if (Input.GetKey(KeyCode.L))// A modif avec le new input system
-        {
-            ReloadScene();
-        }
-    }
-    public void StartScene(Scene newScene)
+    public void LoadScene(string sceneName) => StartScene(sceneName);
+
+    void StartScene(string sceneName)
     {
         gameState = GameState.PLAY;
 
-        SceneManager.LoadScene(newScene.name);
+        UIManager.Instance._loadingCanvas.DOFade(1, 0.2f).OnComplete(() =>
+        {
+            SceneManager.LoadScene(sceneName);
+            UIManager.Instance.StartGame();
+        });
+    }
 
-        UIManager.Instance.StartGame();
+    public void MenuScene()
+    {
+        gameState = GameState.START;
+
+        UIManager.Instance._loadingCanvas.DOFade(1, 0.2f).OnComplete(() =>
+        {
+            SceneManager.LoadScene("Menu");
+            UIManager.Instance.StartMenu();
+        });
     }
 
     public void EndGame()
     {
-        gameState = GameState.PLAY;
+        gameState = GameState.END;
 
+        UIManager.Instance.HandleEnd();
     }
 
     public void QuitApplication()
@@ -46,22 +59,4 @@ public class GameManager : MonoSingleton<GameManager>
         Application.Quit();
     }
 
-    public void ReloadScene()
-    {
-        UIManager.Instance.LoadingCanvas.DOFade(1, 0.2f).OnComplete(() =>
-        {
-            DOTween.KillAll();
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.name);
-        });
-    }
-
-    public void LoadScene(string sceneName)
-    {
-        UIManager.Instance.LoadingCanvas.DOFade(1, 0.2f).OnComplete(() =>
-        {
-            DOTween.KillAll();
-            SceneManager.LoadScene(sceneName);
-        });
-    }
 }
