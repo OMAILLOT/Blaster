@@ -1,10 +1,11 @@
+using BaseTemplate.Behaviours;
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoSingleton<PlayerController>
 {
     [SerializeField] private LayerMask groundLayerMask;
     [SerializeField] private float speed;
@@ -17,7 +18,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpDelay;
     [SerializeField] private float divideSpeedWhenJump;
     [SerializeField] private GameObject currentGun;
-    [SerializeField] private GameObject crosshair;
    
     private PlayerInput playerInput;
 
@@ -38,12 +38,18 @@ public class PlayerController : MonoBehaviour
     private bool isScoping;
     bool stopScope = false;
 
+    private GameObject crosshair;
 
 
 
     // Start is called before the first frame update
-    void Start()
+    public void Init()
     {
+
+      /*  if (GameManager.Instance.gameState == GameState.START)
+        {
+            return;
+        }*/
         playerInput = new PlayerInput();
         playerInput.Enable();
 
@@ -67,12 +73,14 @@ public class PlayerController : MonoBehaviour
         playerInput.Player.Scope.canceled += OnScopePressed;
 
 
-        Cursor.lockState = CursorLockMode.Locked;
+       // Cursor.lockState = CursorLockMode.Locked;
 
         baseSpeed = speed;
         baseSidedSpeed = sidedSpeed;
         baseDrag = rb.drag;
         baseSensibility = sensibility;
+
+        crosshair = PlayerManager.Instance.playerCrosshair;
     }
 
     void FixedUpdate()

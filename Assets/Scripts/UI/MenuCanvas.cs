@@ -7,7 +7,7 @@ public enum MenuState { WAIT, MENU, EQUIPEMENT, SETTINGS }
 public class MenuCanvas : MonoBehaviour
 {
 
-    MenuState state;
+    public MenuState state;
 
     [SerializeField] RectTransform menu, equipement, settings;
 
