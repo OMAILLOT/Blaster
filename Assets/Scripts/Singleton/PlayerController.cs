@@ -1,4 +1,5 @@
 using BaseTemplate.Behaviours;
+using Cinemachine;
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
@@ -17,7 +18,12 @@ public class PlayerController : MonoSingleton<PlayerController>
     [SerializeField] private float rayIsGroundedDistance;
     [SerializeField] private float jumpDelay;
     [SerializeField] private float divideSpeedWhenJump;
-    [SerializeField] private GameObject currentGun;
+    [SerializeField] private GameObject currentGameObjectGun;
+    [SerializeField] private float shootRange;
+    [SerializeField] private CinemachineVirtualCamera fpsCamera;
+    [SerializeField] private LayerMask layerCanPlayerShoot;
+
+    public bool canShoot = false;
    
     private PlayerInput playerInput;
 
@@ -37,6 +43,12 @@ public class PlayerController : MonoSingleton<PlayerController>
     private bool isGrounded;
     private bool isScoping;
     bool stopScope = false;
+    private bool isShooting;
+    private int currentAmmo;
+    private float currentShootingForce;
+
+    private bool isTireRateFinish = true;
+    private bool isReloading;
 
     private GameObject crosshair;
 
@@ -67,13 +79,10 @@ public class PlayerController : MonoSingleton<PlayerController>
         playerInput.Player.Jump.canceled += OnJumpPressed;
 
         playerInput.Player.Shoot.started += OnShootPressed;
-        playerInput.Player.Shoot.canceled += OnShootPressed;
+        //playerInput.Player.Shoot.canceled += OnShootPressed;
 
         playerInput.Player.Scope.started += OnScopePressed;
         playerInput.Player.Scope.canceled += OnScopePressed;
-
-
-       // Cursor.lockState = CursorLockMode.Locked;
 
         baseSpeed = speed;
         baseSidedSpeed = sidedSpeed;
@@ -81,6 +90,10 @@ public class PlayerController : MonoSingleton<PlayerController>
         baseSensibility = sensibility;
 
         crosshair = PlayerManager.Instance.playerCrosshair;
+
+        currentAmmo = (int)PlayerData.Instance.PlayerWeapon._ammo;
+        //UIManager.Instance.GameCanvas.RefreshAmmo(currentAmmo);
+
     }
 
     void FixedUpdate()
@@ -119,25 +132,31 @@ public class PlayerController : MonoSingleton<PlayerController>
     void OnWalkPressed(InputAction.CallbackContext context)
     {
         currentSpeedValue = context.ReadValue<float>() * 2;
-        if (currentSpeedValue >= 1) currentSpeedValue = 1;
-        if (currentSpeedValue <= -1) currentSpeedValue = -1;
+        if (UIManager.Instance.GameCanvas.canRunning)
+        {
+            if (currentSpeedValue >= 1) currentSpeedValue = 1;
+            if (currentSpeedValue <= -1) currentSpeedValue = -1;
 
-        isWalking = currentSpeedValue != 0;
+            isWalking = currentSpeedValue != 0;
+        }
     }
 
     void OnSidedWalkPressed(InputAction.CallbackContext context)
     {
         currentSidedSpeedValue = context.ReadValue<float>() * 2;
-        if (currentSidedSpeedValue >= 1) currentSidedSpeedValue = 1;
-        if (currentSidedSpeedValue <= -1) currentSidedSpeedValue = -1;
+        if (UIManager.Instance.GameCanvas.canRunning)
+        {
+            if (currentSidedSpeedValue >= 1) currentSidedSpeedValue = 1;
+            if (currentSidedSpeedValue <= -1) currentSidedSpeedValue = -1;
 
-        isSidedWalking = currentSidedSpeedValue != 0;
+            isSidedWalking = currentSidedSpeedValue != 0;
+        }
     }
 
     void OnJumpPressed(InputAction.CallbackContext context)
     {
         isJumping = context.ReadValue<float>() > 0;
-        if (isJumping && isGrounded && canJump)
+        if (isJumping && isGrounded && canJump && UIManager.Instance.GameCanvas.canRunning)
         {
             canJump = false;
             rb.AddForce(0, jumpForce * 1000, 0);
@@ -172,7 +191,55 @@ public class PlayerController : MonoSingleton<PlayerController>
 
     void OnShootPressed(InputAction.CallbackContext context)
     {
+        isShooting = context.ReadValue<float>() > 0;
+        if (isShooting && isTireRateFinish && !isReloading && canShoot)
+        {
+            currentAmmo--;
+            UIManager.Instance.GameCanvas.RefreshAmmo(currentAmmo);
+/*            if (currentShootingForce > 0) currentShootingForce += 1.5f;
+            else currentShootingForce = PlayerData.Instance.PlayerWeapon.WeaponRecoil;
 
+            if (playerHead.transform.rotation.x > 0) currentShootingForce = -currentShootingForce;
+
+            playerHead.transform.DOLocalRotate(Vector3.right * (playerHead.transform.rotation.x - currentShootingForce),
+                                                        PlayerData.Instance.PlayerWeapon.weaponRecoilDuration * 0.4f)
+                  .SetEase(Ease.OutQuart)
+                  .OnComplete(() =>
+                  {
+                      playerHead.transform.DOLocalRotate(Vector3.right * (playerHead.transform.rotation.x + currentShootingForce), 
+                                                    PlayerData.Instance.PlayerWeapon.weaponRecoilDuration * 0.6f)
+                      .SetEase(Ease.OutSine)
+                      .OnComplete(() => currentShootingForce = 0);
+                  });
+*/
+            playerHead.transform.DOShakeRotation(1f, 1,10, 0,true,ShakeRandomnessMode.Full );
+
+            RaycastHit hit;
+            if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out hit, shootRange, layerCanPlayerShoot))
+            {
+                hit.rigidbody.AddForceAtPosition(fpsCamera.transform.forward * PlayerData.Instance.PlayerWeapon.bulletForce, hit.point);
+                TargetManager.Instance.TargetHit(hit.collider.gameObject);
+            }
+            if (currentAmmo <= 0) StartCoroutine(Reload());
+            else StartCoroutine(WaitBeforeShoot());
+        }
+    }
+    
+    IEnumerator WaitBeforeShoot()
+    {
+        isTireRateFinish = false;
+        yield return new WaitForSeconds(PlayerData.Instance.PlayerWeapon._fireRate);
+        isTireRateFinish = true;
+    }
+
+    IEnumerator Reload()
+    {
+        isReloading = true;
+        yield return new WaitForSeconds(PlayerData.Instance.PlayerWeapon._reloadTime);
+        currentAmmo = (int)PlayerData.Instance.PlayerWeapon._ammo;
+        UIManager.Instance.GameCanvas.RefreshAmmo(currentAmmo);
+        StartCoroutine(WaitBeforeShoot());
+        isReloading = false;
     }
 
     void OnScopePressed(InputAction.CallbackContext context)
@@ -181,7 +248,7 @@ public class PlayerController : MonoSingleton<PlayerController>
         if (isScoping && !stopScope)
         {
             stopScope = true;
-            currentGun.transform.DOLocalMoveX(0, 0.5f).OnComplete(() =>
+            currentGameObjectGun.transform.DOLocalMoveX(0, 0.5f).OnComplete(() =>
             {
                 crosshair.SetActive(false);
                 speed /= 2f;
@@ -196,12 +263,12 @@ public class PlayerController : MonoSingleton<PlayerController>
             });*/
         } else
         {
-            currentGun.transform.DOKill();
+            currentGameObjectGun.transform.DOKill();
             crosshair.SetActive(true);
             speed = baseSpeed;
             sidedSpeed = baseSidedSpeed;
             sensibility = baseSensibility;
-            currentGun.transform.DOLocalMoveX(0.3f, 0.5f).OnComplete(() => {
+            currentGameObjectGun.transform.DOLocalMoveX(0.3f, 0.5f).OnComplete(() => {
                 stopScope = false;
             });
 
@@ -212,5 +279,14 @@ public class PlayerController : MonoSingleton<PlayerController>
     {
         yield return new WaitForSeconds(jumpDelay);
         canJump = true;
+    }
+
+    public void ActivatePlayer()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        rb.constraints = (int) RigidbodyConstraints.FreezeAll -
+                         RigidbodyConstraints.FreezePositionX -
+                         RigidbodyConstraints.FreezePositionZ -
+                         RigidbodyConstraints.FreezePositionY;
     }
 }

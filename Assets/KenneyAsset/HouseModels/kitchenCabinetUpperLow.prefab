@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5983292914344050542}
   - component: {fileID: 4454332110598543697}
   - component: {fileID: 742127505816808456}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5392502193682285057}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2684418, y: 1.681558, z: 0.09999999}
+  m_LocalPosition: {x: 0.052, y: 0.337, z: -0.0199}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 5157384953434225196}
   - component: {fileID: 6950814558943760102}
   - component: {fileID: -6162623079641531693}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: kitchenCabinetUpperLow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8896506418150731571}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

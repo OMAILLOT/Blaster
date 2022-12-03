@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6737653923895395125}
   - component: {fileID: 7651386100358990992}
   - component: {fileID: 5605812031469041754}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: rampLarge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,10 +25,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6254132258731268495}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.988658, y: 0.20000267, z: -24.734915}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

@@ -14,13 +14,22 @@ public class GameManager : MonoSingleton<GameManager>
 
     void Awake()
     {
-        DontDestroyOnLoad(transform.parent.gameObject);
+/*        if (Instance == null)
+        {*/
+            DontDestroyOnLoad(transform.parent.gameObject);
 
-        gameState = GameState.START;
+            gameState = GameState.START;
 
-        UIManager.Instance.Init();
+            UIManager.Instance.Init();
 
-        PlayerController.Instance.Init();
+            PlayerController.Instance.Init();
+
+            //TargetManager.Instance.Init();
+     /*   } else if (Instance != this)
+        {
+            //Destroy(this.gameObject);
+            return;
+        }*/
     }
 
     public void LoadScene(string sceneName) => StartScene(sceneName);

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4754658375575295131}
   - component: {fileID: 7358608906526957649}
   - component: {fileID: -9011723529088301153}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: kitchenStoveElectric
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9016201644374688132}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

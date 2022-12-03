@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4065925222288360970}
   - component: {fileID: 2272600629805085376}
   - component: {fileID: 5638086768548396365}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: bookcaseOpen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 326821358752486165}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

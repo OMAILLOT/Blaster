@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7686516873176190430}
   - component: {fileID: 5570681257993861396}
   - component: {fileID: -7370885689144948270}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: kitchenSink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 9093230684398684316}
   - component: {fileID: 1218715597865823907}
   - component: {fileID: 2843417460824300538}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}

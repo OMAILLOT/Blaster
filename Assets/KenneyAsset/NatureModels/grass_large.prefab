@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1391737654838316118}
   - component: {fileID: 3797806947566925980}
   - component: {fileID: 359796415839656206}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: grass_large
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3437505714825926985}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: -0.049999997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -93,7 +93,7 @@ MeshCollider:
   m_GameObject: {fileID: 3437505714825926985}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8903337484804000022}
   - component: {fileID: 6659685908758494684}
   - component: {fileID: -7497893249681001305}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: pillowBlueLong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5146217430025427977}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

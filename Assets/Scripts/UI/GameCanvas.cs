@@ -5,23 +5,36 @@ using UnityEngine;
 
 public class GameCanvas : MonoBehaviour
 {
-    [SerializeField] TMP_Text _startCountdown, _timer, _amountTarget, _ammo;
+    [SerializeField] TMP_Text _startCountdown, _timer, _amountTarget, numberOfTargetLeft, numberOfTargetMax, numberOfBulletLeft, numberOfBulletMax;
     public float MapTime;
-    public bool IsRunning;
+    public bool canRunning;
 
     public void Init()
     {
-        _amountTarget.text = 20 + "/" + 20;
-        RefreshAmmo();
+        RefreshAmmo((int)PlayerData.Instance.PlayerWeapon._ammo);
+        numberOfBulletMax.text = PlayerData.Instance.PlayerWeapon._ammo.ToString();
     }
 
-    public void RefreshAmmo()
+    public void RefreshAmmo(int currentAmmo)
     {
-        _ammo.text = 20 + "/" + 20;
+        numberOfBulletLeft.text = currentAmmo.ToString();
+    }
+
+    public void FirstRefeshTargetCounter()
+    {
+        RefreshTargetCounter(TargetManager.Instance.numberOfTarget);
+        numberOfTargetMax.text = TargetManager.Instance.numberOfTarget.ToString();
+    }
+
+    public void RefreshTargetCounter(int numberOfTargetHit)
+    {
+        numberOfTargetLeft.text = numberOfTargetHit.ToString();
     }
 
     public IEnumerator StartCountdown()
     {
+        canRunning = false;
+        PlayerController.Instance.canShoot = false;
         for (int i = 5; i > 0; i--)
         {
             _startCountdown.text = i.ToString();
@@ -30,12 +43,13 @@ public class GameCanvas : MonoBehaviour
         _startCountdown.text = "";
         _timer.gameObject.GetComponent<CanvasGroup>().DOFade(1, .2f);
 
-        IsRunning = true;
+        canRunning = true;
+        PlayerController.Instance.canShoot = true;
     }
 
     private void Update()
     {
-        if (IsRunning)
+        if (canRunning)
         {
             MapTime += Time.deltaTime;
             _timer.text = MapTime.ToString("N2") + "s";
@@ -43,7 +57,7 @@ public class GameCanvas : MonoBehaviour
 
     }
 
-    public void EndGame() => IsRunning= false;
+    public void EndGame() => canRunning= false;
 
 
 }

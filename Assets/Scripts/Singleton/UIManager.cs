@@ -2,6 +2,7 @@ using BaseTemplate.Behaviours;
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -15,6 +16,9 @@ public class UIManager : MonoSingleton<UIManager>
     public CanvasGroup _loadingCanvas;
 
     [SerializeField] CanvasGroup _menuCanvasGroup, _gameCanvasGroup, _pauseCanvasGroup, _endCanvasGroup;
+
+    [Space(10)]
+    [Header("TextGameView")]
 
     CanvasGroup _actualCanvasGroup;
 
@@ -50,6 +54,8 @@ public class UIManager : MonoSingleton<UIManager>
         SwitchToCanvas(_gameCanvasGroup);
 
         StartCoroutine(GameCanvas.StartCountdown());
+
+        PlayerController.Instance.ActivatePlayer();
     }
 
     public void StartMenu()
@@ -99,7 +105,7 @@ public class UIManager : MonoSingleton<UIManager>
 
     public void HandleEnterPause()
     {
-        GameCanvas.IsRunning = false;
+        GameCanvas.canRunning = false;
 
         Cursor.lockState = CursorLockMode.None;
 
@@ -107,7 +113,7 @@ public class UIManager : MonoSingleton<UIManager>
     }
     public void HandleExitPause()
     {
-        GameCanvas.IsRunning = true;
+        GameCanvas.canRunning = true;
 
         Cursor.lockState = CursorLockMode.Locked;
 

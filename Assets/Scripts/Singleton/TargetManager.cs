@@ -6,18 +6,35 @@ using UnityEngine;
 public class TargetManager : MonoSingleton<TargetManager>
 {
     [SerializeField] private List<GameObject> targets;
-    [SerializeField] private int numberOfTarget;
+    public int numberOfTarget;
 
     int randomTarget;
-    List<int> targetTakeByRandomTarget;
-    public void Init()
+    int nuberOfTargetHit;
+    public void Start()
     {
-        for (int i = 0; i < targets.Count;)
+        for (int i = 0; i < numberOfTarget; i++)
         {
             randomTarget = Random.Range(0, targets.Count);
 
             targets[randomTarget].SetActive(true);
+            targets.RemoveAt(randomTarget);
+        }
+        UIManager.Instance.GameCanvas.FirstRefeshTargetCounter();
+    }
 
+    public void TargetHit(GameObject target)
+    {
+        Target currentTarget = target.GetComponent<Target>();
+        if (!currentTarget.isHit)
+        {
+            target.GetComponent<Rigidbody>().useGravity = true;
+            currentTarget.isHit = true;
+            nuberOfTargetHit++;
+            UIManager.Instance.GameCanvas.RefreshTargetCounter(numberOfTarget - nuberOfTargetHit);
+            if (nuberOfTargetHit == numberOfTarget)
+            {
+               GameManager.Instance.EndGame();
+            }
         }
     }
 }

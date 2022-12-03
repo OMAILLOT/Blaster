@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2434417529940649155}
   - component: {fileID: 8478523947958160332}
   - component: {fileID: 711513115451678232}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pillowLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 7231882707768856355}
   - component: {fileID: 361022644093465619}
   - component: {fileID: 8266233682368743600}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: cover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 346612515780232106}
   - component: {fileID: 2534292348944906080}
   - component: {fileID: -3303621507139303606}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bedDouble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,9 +193,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4047435372705502901}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.3049016, y: 0.3000002, z: 37.07574}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7231882707768856355}
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 6091813170267889475}
   - component: {fileID: 7789333038022952474}
   - component: {fileID: 5672428968865340674}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pillowRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 143338758609198467}
   - component: {fileID: 8628384847427265620}
   - component: {fileID: 1454636147397288603}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 6810520728407328164}
   - component: {fileID: 8748000165542474094}
   - component: {fileID: 5386700445424616115}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: wallWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7090882141371240635}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

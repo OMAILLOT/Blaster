@@ -20,12 +20,13 @@ namespace BaseTemplate.Behaviours
 
                         if (instances.Length > 1)
                         {
-                            // Debug.LogWarning("MULTIPLE instances of \"" + typeof(T).Name + "\" in the scene");
+                            Debug.LogWarning("MULTIPLE instances of \"" + typeof(T).Name + "\" in the scene");
+                            Destroy(instances[1]);
                         }
 
                         if (instances == null || instances.Length == 0)
                         {
-                            //Debug.LogWarning("NO instance found for the type \"" + typeof(T).Name + "\"");
+                            Debug.LogWarning("NO instance found for the type \"" + typeof(T).Name + "\"");
                             return null;
                         }
 

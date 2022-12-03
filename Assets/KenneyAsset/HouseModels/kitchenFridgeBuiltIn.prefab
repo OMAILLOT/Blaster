@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 986203408467621095}
   - component: {fileID: 3047606056414674989}
   - component: {fileID: -7350375811097283344}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: kitchenFridgeBuiltIn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3552137238148194808}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 2160952769353153312}
   - component: {fileID: 4882077816546040644}
   - component: {fileID: 6184227329637440374}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: doorFridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3839435158770603191}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5033669, y: 1.087089, z: 0.35}
+  m_LocalPosition: {x: 0.097, y: 0.165, z: 0.019}
   m_LocalScale: {x: 0.8751433, y: 0.88, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 4686189446929020261}
   - component: {fileID: 6479497846495630006}
   - component: {fileID: 2649489316553853454}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: doorFreezer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8781843066512518903}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5033669, y: 6.512975, z: 0.35}
+  m_LocalPosition: {x: 0.102, y: 1.293, z: 0.037}
   m_LocalScale: {x: 0.8751433, y: 0.88, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

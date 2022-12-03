@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3392766276452698945}
   - component: {fileID: 1781839298197996772}
   - component: {fileID: 4566274192214634542}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: roofHighFlat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,9 +25,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2620627001132913147}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -35.14866, y: 0, z: 14.954352}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.0974, y: 1, z: 2.0958648}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

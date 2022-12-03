@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8829946505706329253}
   - component: {fileID: 6732515141000306799}
   - component: {fileID: 6662821682359789529}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: road_straight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5075080320113213882}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: -0.74999994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1

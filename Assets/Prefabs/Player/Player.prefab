@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 767637621}
   - component: {fileID: 767637620}
   - component: {fileID: 2146074234}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   groundLayerMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 8
   speed: 40
   sidedSpeed: 30
   jumpForce: 40
@@ -312,7 +312,11 @@ MonoBehaviour:
   jumpDelay: 0.5
   divideSpeedWhenJump: 20
   currentGun: {fileID: 8221933121927788736}
-  crosshair: {fileID: 0}
+  shootRange: 0
+  fpsCamera: {fileID: 1890965588}
+  layerCanPlayerShoot:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!54 &767637621
 Rigidbody:
   m_ObjectHideFlags: 0

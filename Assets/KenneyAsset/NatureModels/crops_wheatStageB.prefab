@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7247130123140295481}
   - component: {fileID: 4861087394257936371}
   - component: {fileID: -7112438989808873618}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: crops_wheatStageB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6374547626652614182}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: -0.049999997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -94,7 +94,7 @@ MeshCollider:
   m_GameObject: {fileID: 6374547626652614182}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30

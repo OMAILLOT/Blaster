@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4605773777697181316}
   - component: {fileID: 1733333423975823950}
   - component: {fileID: -6661956950728499093}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: wallCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220383778299468699}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
