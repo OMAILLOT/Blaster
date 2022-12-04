@@ -24,6 +24,7 @@ public class GameManager : MonoSingleton<GameManager>
 
             PlayerController.Instance.Init();
 
+            AudioManager.Instance.Init();
             //TargetManager.Instance.Init();
      /*   } else if (Instance != this)
         {

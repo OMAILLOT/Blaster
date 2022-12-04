@@ -311,12 +311,17 @@ MonoBehaviour:
   rayIsGroundedDistance: 1.3
   jumpDelay: 0.5
   divideSpeedWhenJump: 20
-  currentGun: {fileID: 8221933121927788736}
-  shootRange: 0
+  currentGameObjectGun: {fileID: 8221933121927788736}
+  shootRange: 80
   fpsCamera: {fileID: 1890965588}
   layerCanPlayerShoot:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
+  fireSounds:
+  - {fileID: 8300000, guid: 4906fd763a54ce6409a4d6485d249a6b, type: 3}
+  - {fileID: 8300000, guid: d8e49bd225777ff4583966da6cd19992, type: 3}
+  - {fileID: 8300000, guid: eb8740feaa460364c9d0349886bb14a9, type: 3}
+  canShoot: 0
 --- !u!54 &767637621
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -331,7 +336,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 1
 --- !u!136 &767637620
 CapsuleCollider:
