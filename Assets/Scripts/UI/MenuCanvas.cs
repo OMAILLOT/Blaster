@@ -12,6 +12,8 @@ public class MenuCanvas : MonoBehaviour
     [SerializeField] RectTransform menu, equipement, settings;
 
     public EquipementScreen equipementScreen;
+    public List<Mission> missions;
+    public int ActualIndexMission;
     [SerializeField] SettingsScreen settingScreen;
 
     public void Init()
@@ -21,6 +23,11 @@ public class MenuCanvas : MonoBehaviour
         settingScreen.Init();
 
         equipementScreen.Armory.Init();
+
+        for (int i = 0; i < missions.Count; i++)
+        {
+            missions[i].Init(i);
+        }
     }
 
     public void OpenEquipement()
@@ -73,5 +80,10 @@ public class MenuCanvas : MonoBehaviour
 
         settings.DOAnchorMin(new Vector2(0, 1), .3f);
         settings.DOAnchorMax(new Vector2(1, 2), .3f).OnComplete(() => state = MenuState.MENU);
+    }
+
+    public void SetActualMissionIndex(int index)
+    {
+        ActualIndexMission= index;
     }
 }

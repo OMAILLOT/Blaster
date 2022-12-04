@@ -15,5 +15,10 @@ public class EndCanvas : MonoBehaviour
 
         _finalTime.text = UIManager.Instance.GameCanvas.MapTime.ToString("N2") + "s";
         _amountTarget.text = TargetManager.Instance.nuberOfTargetHit + "/" + TargetManager.Instance.numberOfTarget;
+
+        if (PlayerPrefs.GetFloat("Mission" + UIManager.Instance.menuCanvas.ActualIndexMission, 999) > UIManager.Instance.GameCanvas.MapTime)
+        {
+            PlayerPrefs.SetFloat("Mission" + UIManager.Instance.menuCanvas.ActualIndexMission, UIManager.Instance.GameCanvas.MapTime);
+        }
     }
 }
