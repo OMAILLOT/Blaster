@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
+    public int ID;
     public bool isHit;
-    public string descriptionPos;
+    public string Desc;
 }

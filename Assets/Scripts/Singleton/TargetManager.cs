@@ -1,12 +1,12 @@
 using BaseTemplate.Behaviours;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class TargetManager : MonoSingleton<TargetManager>
 {
-    [SerializeField] private List<GameObject> targets;
-    [SerializeField] private List<string> targetDescription;
+    [SerializeField] private List<Target> targets;
 
     public string currentTargetDescription;
 
@@ -14,7 +14,7 @@ public class TargetManager : MonoSingleton<TargetManager>
     public int nuberOfTargetHit;
 
     int randomTarget;
-    private Queue<string> targetDescriptionQueue = new Queue<string>();
+    private Dictionary<int,string> targetDescriptionDictionnary = new Dictionary<int, string>();
 
     public void Start()
     {
@@ -22,14 +22,14 @@ public class TargetManager : MonoSingleton<TargetManager>
         {
             randomTarget = Random.Range(0, targets.Count);
 
-            targets[randomTarget].SetActive(true);
-            targetDescriptionQueue.Enqueue(targetDescription[randomTarget]);
+            targets[randomTarget].gameObject.SetActive(true);
+            targetDescriptionDictionnary.Add(targets[randomTarget].ID, targets[randomTarget].Desc);
+
             targets.RemoveAt(randomTarget);
         }
         UIManager.Instance.GameCanvas.RefreshTargetCounter();
 
-        currentTargetDescription = targetDescriptionQueue.Peek();
-        targetDescriptionQueue.Dequeue();
+        currentTargetDescription = targetDescriptionDictionnary.First().Value;
     }
 
     public void TargetHit(GameObject target)
@@ -45,11 +45,11 @@ public class TargetManager : MonoSingleton<TargetManager>
             {
                GameManager.Instance.EndGame();
             }
-            if (currentTargetDescription.Length > 0)
-            {
-                currentTargetDescription = targetDescriptionQueue.Peek();
-                targetDescriptionQueue.Dequeue();
-            }
+
+            targetDescriptionDictionnary.Remove(currentTarget.ID);
+
+            if (targetDescriptionDictionnary.Count > 0) currentTargetDescription = targetDescriptionDictionnary.First().Value;
+
         }
     }
 }

@@ -10,6 +10,6 @@ public class PauseCanvas : MonoBehaviour
     public void Init()
     {
         _amountTarget.text = TargetManager.Instance.nuberOfTargetHit + "/" + TargetManager.Instance.numberOfTarget; 
-        _hintDesc.text = "Behind the waterfall";
+        _hintDesc.text = TargetManager.Instance.currentTargetDescription;
     }
 }

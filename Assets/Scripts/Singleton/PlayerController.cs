@@ -72,7 +72,7 @@ public class PlayerController : MonoSingleton<PlayerController>
         PlayerInput.Player.Jump.started += OnJumpPressed;
         PlayerInput.Player.Jump.canceled += OnJumpPressed;
 
-        playerInput.Player.Shoot.started += OnShootPressed;
+        PlayerInput.Player.Shoot.started += OnShootPressed;
 
         PlayerInput.Player.Scope.started += OnScopePressed;
         PlayerInput.Player.Scope.canceled += OnScopePressed;
@@ -199,12 +199,14 @@ public class PlayerController : MonoSingleton<PlayerController>
     void OnShootPressed(InputAction.CallbackContext context)
     {
         isShooting = context.ReadValue<float>() > 0;
-        print(isShooting);
+
         if (isShooting && isTireRateFinish && !isReloading && canShoot)
         {
             currentAmmo--;
             UIManager.Instance.GameCanvas.RefreshAmmo(currentAmmo);
+
             AudioManager.Instance.PlayClipAt(fireSounds[Random.Range(0, fireSounds.Count)], transform.position);
+
 /*            if (currentShootingForce > 0) currentShootingForce += 1.5f;
             else currentShootingForce = PlayerData.Instance.PlayerWeapon.WeaponRecoil;
 
