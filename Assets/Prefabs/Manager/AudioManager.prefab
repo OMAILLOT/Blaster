@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 3225425350206304530}
-  soundEffectMixer: {fileID: 24300002, guid: a1d2093388120c64fa0fa92cc1156fa7, type: 2}
+  soundEffectMixer: {fileID: -773099341774141964, guid: a1d2093388120c64fa0fa92cc1156fa7,
+    type: 2}
   musics:
   - name: Menu
     sounds:
