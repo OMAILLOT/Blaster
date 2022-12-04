@@ -11,7 +11,7 @@ public class GameCanvas : MonoBehaviour
 
     public void Init()
     {
-        RefreshAmmo((int)PlayerData.Instance.PlayerWeapon._ammo);
+        RefreshAmmo(PlayerController.Instance.currentAmmo);
         numberOfBulletMax.text = PlayerData.Instance.PlayerWeapon._ammo.ToString();
     }
 

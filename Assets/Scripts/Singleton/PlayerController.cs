@@ -45,7 +45,7 @@ public class PlayerController : MonoSingleton<PlayerController>
     private bool isScoping;
     bool stopScope = false;
     private bool isShooting;
-    private int currentAmmo;
+    public int currentAmmo;
     private float currentShootingForce;
 
     private bool isTireRateFinish = true;
