@@ -20,6 +20,10 @@ public class GameManager : MonoSingleton<GameManager>
         LoadGameData();
 
         UIManager.Instance.Init();
+        
+            PlayerController.Instance.Init();
+
+            AudioManager.Instance.Init();
     }
 
     void LoadGameData()

@@ -22,6 +22,7 @@ public class PlayerController : MonoSingleton<PlayerController>
     [SerializeField] private float shootRange;
     [SerializeField] private CinemachineVirtualCamera fpsCamera;
     [SerializeField] private LayerMask layerCanPlayerShoot;
+    [SerializeField] private List<AudioClip> fireSounds;
 
     public bool canShoot = false;
 
@@ -71,8 +72,7 @@ public class PlayerController : MonoSingleton<PlayerController>
         PlayerInput.Player.Jump.started += OnJumpPressed;
         PlayerInput.Player.Jump.canceled += OnJumpPressed;
 
-        PlayerInput.Player.Shoot.started += OnShootPressed;
-        //playerInput.Player.Shoot.canceled += OnShootPressed;
+        playerInput.Player.Shoot.started += OnShootPressed;
 
         PlayerInput.Player.Scope.started += OnScopePressed;
         PlayerInput.Player.Scope.canceled += OnScopePressed;
@@ -87,8 +87,6 @@ public class PlayerController : MonoSingleton<PlayerController>
         Instantiate(PlayerData.Instance.PlayerWeapon.Blaster, currentGameObjectGun.transform);
 
         currentAmmo = (int)PlayerData.Instance.PlayerWeapon._ammo;
-        //UIManager.Instance.GameCanvas.RefreshAmmo(currentAmmo);
-
     }
 
     private void OnDestroy()
@@ -109,7 +107,6 @@ public class PlayerController : MonoSingleton<PlayerController>
             PlayerInput.Player.Jump.canceled -= OnJumpPressed;
 
             PlayerInput.Player.Shoot.started -= OnShootPressed;
-            //playerInput.Player.Shoot.canceled -= OnShootPressed;
 
             PlayerInput.Player.Scope.started -= OnScopePressed;
             PlayerInput.Player.Scope.canceled -= OnScopePressed;
@@ -200,12 +197,16 @@ public class PlayerController : MonoSingleton<PlayerController>
     void OnShootPressed(InputAction.CallbackContext context)
     {
         isShooting = context.ReadValue<float>() > 0;
+        print(isShooting);
         if (isShooting && isTireRateFinish && !isReloading && canShoot)
         {
             currentAmmo--;
             UIManager.Instance.GameCanvas.RefreshAmmo(currentAmmo);
-            /*            if (currentShootingForce > 0) currentShootingForce += 1.5f;
-                        else currentShootingForce = PlayerData.Instance.PlayerWeapon.WeaponRecoil;
+
+            AudioManager.Instance.PlayClipAt(fireSounds[Random.Range(0, fireSounds.Count)], transform.position);
+            
+/*            if (currentShootingForce > 0) currentShootingForce += 1.5f;
+            else currentShootingForce = PlayerData.Instance.PlayerWeapon.WeaponRecoil;
 
                         if (playerHead.transform.rotation.x > 0) currentShootingForce = -currentShootingForce;
 
