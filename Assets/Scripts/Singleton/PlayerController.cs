@@ -9,8 +9,8 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoSingleton<PlayerController>
 {
     [SerializeField] private LayerMask groundLayerMask;
-    [SerializeField] private float speed;
-    [SerializeField] private float sidedSpeed;
+    [SerializeField] float speed;
+    [SerializeField] float sidedSpeed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float sensibility;
     [SerializeField] GameObject playerHead;
@@ -24,8 +24,8 @@ public class PlayerController : MonoSingleton<PlayerController>
     [SerializeField] private LayerMask layerCanPlayerShoot;
 
     public bool canShoot = false;
-   
-    private PlayerInput playerInput;
+
+    public PlayerInput PlayerInput;
 
     private float currentSpeedValue;
     private float currentSidedSpeedValue;
@@ -52,37 +52,30 @@ public class PlayerController : MonoSingleton<PlayerController>
 
     private GameObject crosshair;
 
-
-
     // Start is called before the first frame update
     public void Init()
     {
+        PlayerInput = new PlayerInput();
+        PlayerInput.Enable();
 
-      /*  if (GameManager.Instance.gameState == GameState.START)
-        {
-            return;
-        }*/
-        playerInput = new PlayerInput();
-        playerInput.Enable();
+        PlayerInput.Player.Walk.started += OnWalkPressed;
+        PlayerInput.Player.Walk.canceled += OnWalkPressed;
 
-        playerInput.Player.Walk.started += OnWalkPressed;
-        playerInput.Player.Walk.canceled += OnWalkPressed;
+        PlayerInput.Player.SidedWalk.started += OnSidedWalkPressed;
+        PlayerInput.Player.SidedWalk.canceled += OnSidedWalkPressed;
 
-        playerInput.Player.SidedWalk.started += OnSidedWalkPressed;
-        playerInput.Player.SidedWalk.canceled += OnSidedWalkPressed;
+        PlayerInput.Player.MouseValue.started += GetValueMouse;
+        PlayerInput.Player.MouseValue.canceled += GetValueMouse;
+        PlayerInput.Player.MouseValue.performed += GetValueMouse;
 
-        playerInput.Player.MouseValue.started += GetValueMouse;
-        playerInput.Player.MouseValue.canceled += GetValueMouse;
-        playerInput.Player.MouseValue.performed += GetValueMouse;
+        PlayerInput.Player.Jump.started += OnJumpPressed;
+        PlayerInput.Player.Jump.canceled += OnJumpPressed;
 
-        playerInput.Player.Jump.started += OnJumpPressed;
-        playerInput.Player.Jump.canceled += OnJumpPressed;
-
-        playerInput.Player.Shoot.started += OnShootPressed;
+        PlayerInput.Player.Shoot.started += OnShootPressed;
         //playerInput.Player.Shoot.canceled += OnShootPressed;
 
-        playerInput.Player.Scope.started += OnScopePressed;
-        playerInput.Player.Scope.canceled += OnScopePressed;
+        PlayerInput.Player.Scope.started += OnScopePressed;
+        PlayerInput.Player.Scope.canceled += OnScopePressed;
 
         baseSpeed = speed;
         baseSidedSpeed = sidedSpeed;
@@ -91,15 +84,42 @@ public class PlayerController : MonoSingleton<PlayerController>
 
         crosshair = PlayerManager.Instance.playerCrosshair;
 
+        Instantiate(PlayerData.Instance.PlayerWeapon.Blaster, currentGameObjectGun.transform);
+
         currentAmmo = (int)PlayerData.Instance.PlayerWeapon._ammo;
         //UIManager.Instance.GameCanvas.RefreshAmmo(currentAmmo);
 
     }
 
+    private void OnDestroy()
+    {
+        if (PlayerInput != null)
+        {
+            PlayerInput.Player.Walk.started -= OnWalkPressed;
+            PlayerInput.Player.Walk.canceled -= OnWalkPressed;
+
+            PlayerInput.Player.SidedWalk.started -= OnSidedWalkPressed;
+            PlayerInput.Player.SidedWalk.canceled -= OnSidedWalkPressed;
+
+            PlayerInput.Player.MouseValue.started -= GetValueMouse;
+            PlayerInput.Player.MouseValue.canceled -= GetValueMouse;
+            PlayerInput.Player.MouseValue.performed -= GetValueMouse;
+
+            PlayerInput.Player.Jump.started -= OnJumpPressed;
+            PlayerInput.Player.Jump.canceled -= OnJumpPressed;
+
+            PlayerInput.Player.Shoot.started -= OnShootPressed;
+            //playerInput.Player.Shoot.canceled -= OnShootPressed;
+
+            PlayerInput.Player.Scope.started -= OnScopePressed;
+            PlayerInput.Player.Scope.canceled -= OnScopePressed;
+        }
+    }
+
     void FixedUpdate()
-    {        
+    {
         transform.RotateAround(transform.position, new Vector3(0, 1, 0), currentMouseValue.x * sensibility * Time.fixedDeltaTime);
-        playerHead.transform.Rotate(Vector3.left, currentMouseValue.y * (sensibility / 1.5f) * Time.fixedDeltaTime,Space.Self);
+        playerHead.transform.Rotate(Vector3.left, currentMouseValue.y * (sensibility / 1.5f) * Time.fixedDeltaTime, Space.Self);
 
         if (isWalking)
         {
@@ -114,18 +134,6 @@ public class PlayerController : MonoSingleton<PlayerController>
 
         bool hit = Physics.Raycast(transform.position, Vector3.down, rayIsGroundedDistance, groundLayerMask);
         isGrounded = hit;
-
-            if (hit)
-            {
-                rb.drag = baseDrag;
-                speed = baseSpeed;
-                sidedSpeed = baseSidedSpeed;
-            } else
-            {
-                rb.drag = 0;
-                speed = baseSpeed / divideSpeedWhenJump;
-                sidedSpeed = baseSidedSpeed / divideSpeedWhenJump;
-            }
     }
 
 
@@ -196,23 +204,23 @@ public class PlayerController : MonoSingleton<PlayerController>
         {
             currentAmmo--;
             UIManager.Instance.GameCanvas.RefreshAmmo(currentAmmo);
-/*            if (currentShootingForce > 0) currentShootingForce += 1.5f;
-            else currentShootingForce = PlayerData.Instance.PlayerWeapon.WeaponRecoil;
+            /*            if (currentShootingForce > 0) currentShootingForce += 1.5f;
+                        else currentShootingForce = PlayerData.Instance.PlayerWeapon.WeaponRecoil;
 
-            if (playerHead.transform.rotation.x > 0) currentShootingForce = -currentShootingForce;
+                        if (playerHead.transform.rotation.x > 0) currentShootingForce = -currentShootingForce;
 
-            playerHead.transform.DOLocalRotate(Vector3.right * (playerHead.transform.rotation.x - currentShootingForce),
-                                                        PlayerData.Instance.PlayerWeapon.weaponRecoilDuration * 0.4f)
-                  .SetEase(Ease.OutQuart)
-                  .OnComplete(() =>
-                  {
-                      playerHead.transform.DOLocalRotate(Vector3.right * (playerHead.transform.rotation.x + currentShootingForce), 
-                                                    PlayerData.Instance.PlayerWeapon.weaponRecoilDuration * 0.6f)
-                      .SetEase(Ease.OutSine)
-                      .OnComplete(() => currentShootingForce = 0);
-                  });
-*/
-            playerHead.transform.DOShakeRotation(1f, 1,10, 0,true,ShakeRandomnessMode.Full );
+                        playerHead.transform.DOLocalRotate(Vector3.right * (playerHead.transform.rotation.x - currentShootingForce),
+                                                                    PlayerData.Instance.PlayerWeapon.weaponRecoilDuration * 0.4f)
+                              .SetEase(Ease.OutQuart)
+                              .OnComplete(() =>
+                              {
+                                  playerHead.transform.DOLocalRotate(Vector3.right * (playerHead.transform.rotation.x + currentShootingForce), 
+                                                                PlayerData.Instance.PlayerWeapon.weaponRecoilDuration * 0.6f)
+                                  .SetEase(Ease.OutSine)
+                                  .OnComplete(() => currentShootingForce = 0);
+                              });
+            */
+            playerHead.transform.DOShakeRotation(1f, 1, 10, 0, true, ShakeRandomnessMode.Full);
 
             RaycastHit hit;
             if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out hit, shootRange, layerCanPlayerShoot))
@@ -224,7 +232,7 @@ public class PlayerController : MonoSingleton<PlayerController>
             else StartCoroutine(WaitBeforeShoot());
         }
     }
-    
+
     IEnumerator WaitBeforeShoot()
     {
         isTireRateFinish = false;
@@ -261,19 +269,21 @@ public class PlayerController : MonoSingleton<PlayerController>
                 sensibility = baseSensibility;
 
             });*/
-        } else
+        }
+        else
         {
             currentGameObjectGun.transform.DOKill();
             crosshair.SetActive(true);
             speed = baseSpeed;
             sidedSpeed = baseSidedSpeed;
             sensibility = baseSensibility;
-            currentGameObjectGun.transform.DOLocalMoveX(0.3f, 0.5f).OnComplete(() => {
+            currentGameObjectGun.transform.DOLocalMoveX(0.3f, 0.5f).OnComplete(() =>
+            {
                 stopScope = false;
             });
 
         }
-    } 
+    }
 
     IEnumerator waitBeforeJumpAutorizeToJump()
     {
@@ -283,10 +293,17 @@ public class PlayerController : MonoSingleton<PlayerController>
 
     public void ActivatePlayer()
     {
+        PlayerInput.Enable();
+
         Cursor.lockState = CursorLockMode.Locked;
-        rb.constraints = (int) RigidbodyConstraints.FreezeAll -
+        rb.constraints = (int)RigidbodyConstraints.FreezeAll -
                          RigidbodyConstraints.FreezePositionX -
                          RigidbodyConstraints.FreezePositionZ -
                          RigidbodyConstraints.FreezePositionY;
+    }
+
+    public void DesactivePlayer()
+    {
+        PlayerInput.Disable();
     }
 }

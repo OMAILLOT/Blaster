@@ -42,6 +42,8 @@ public class Armory : MonoBehaviour
         actualWeapon.background.DOColor(ColorManager.Instance.DarkGrey, .3f);
 
         infoArmory.Init(actualWeapon.weaponData);
+
+        PlayerPrefs.SetString("WeaponName", actualWeapon.weaponData._name);
     }
 
 }

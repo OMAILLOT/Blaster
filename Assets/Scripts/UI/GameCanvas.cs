@@ -20,21 +20,19 @@ public class GameCanvas : MonoBehaviour
         numberOfBulletLeft.text = currentAmmo.ToString();
     }
 
-    public void FirstRefeshTargetCounter()
+    public void RefreshTargetCounter()
     {
-        RefreshTargetCounter(TargetManager.Instance.numberOfTarget);
+        numberOfTargetLeft.text = TargetManager.Instance.nuberOfTargetHit.ToString();
         numberOfTargetMax.text = TargetManager.Instance.numberOfTarget.ToString();
-    }
-
-    public void RefreshTargetCounter(int numberOfTargetHit)
-    {
-        numberOfTargetLeft.text = numberOfTargetHit.ToString();
     }
 
     public IEnumerator StartCountdown()
     {
+        UIManager.Instance.playerInput.Disable();
         canRunning = false;
         PlayerController.Instance.canShoot = false;
+
+
         for (int i = 5; i > 0; i--)
         {
             _startCountdown.text = i.ToString();
@@ -45,6 +43,8 @@ public class GameCanvas : MonoBehaviour
 
         canRunning = true;
         PlayerController.Instance.canShoot = true;
+        UIManager.Instance.playerInput.Enable();
+
     }
 
     private void Update()

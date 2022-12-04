@@ -11,7 +11,7 @@ public class MenuCanvas : MonoBehaviour
 
     [SerializeField] RectTransform menu, equipement, settings;
 
-    [SerializeField] EquipementScreen equipementScreen;
+    public EquipementScreen equipementScreen;
     [SerializeField] SettingsScreen settingScreen;
 
     public void Init()

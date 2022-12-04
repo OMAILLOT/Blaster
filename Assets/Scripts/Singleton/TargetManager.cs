@@ -7,9 +7,9 @@ public class TargetManager : MonoSingleton<TargetManager>
 {
     [SerializeField] private List<GameObject> targets;
     public int numberOfTarget;
+    public int nuberOfTargetHit;
 
     int randomTarget;
-    int nuberOfTargetHit;
     public void Start()
     {
         for (int i = 0; i < numberOfTarget; i++)
@@ -19,7 +19,7 @@ public class TargetManager : MonoSingleton<TargetManager>
             targets[randomTarget].SetActive(true);
             targets.RemoveAt(randomTarget);
         }
-        UIManager.Instance.GameCanvas.FirstRefeshTargetCounter();
+        UIManager.Instance.GameCanvas.RefreshTargetCounter();
     }
 
     public void TargetHit(GameObject target)
@@ -30,7 +30,7 @@ public class TargetManager : MonoSingleton<TargetManager>
             target.GetComponent<Rigidbody>().useGravity = true;
             currentTarget.isHit = true;
             nuberOfTargetHit++;
-            UIManager.Instance.GameCanvas.RefreshTargetCounter(numberOfTarget - nuberOfTargetHit);
+            UIManager.Instance.GameCanvas.RefreshTargetCounter();
             if (nuberOfTargetHit == numberOfTarget)
             {
                GameManager.Instance.EndGame();

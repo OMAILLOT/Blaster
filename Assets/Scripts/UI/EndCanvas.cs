@@ -9,7 +9,11 @@ public class EndCanvas : MonoBehaviour
 
     public void Init()
     {
-        _finalTime.text = UIManager.Instance.GameCanvas.MapTime.ToString("NN") + "s";
-        _amountTarget.text = 20 + "/" + 20;
+        PlayerController.Instance.DesactivePlayer();
+
+        Cursor.lockState = CursorLockMode.None;
+
+        _finalTime.text = UIManager.Instance.GameCanvas.MapTime.ToString("N2") + "s";
+        _amountTarget.text = TargetManager.Instance.nuberOfTargetHit + "/" + TargetManager.Instance.numberOfTarget;
     }
 }

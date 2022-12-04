@@ -22,7 +22,7 @@ public class UIManager : MonoSingleton<UIManager>
 
     CanvasGroup _actualCanvasGroup;
 
-    PlayerInput playerInput;
+    public PlayerInput playerInput;
 
     public void Init()
     {
@@ -30,22 +30,21 @@ public class UIManager : MonoSingleton<UIManager>
 
         _actualCanvasGroup = _menuCanvasGroup;
 
-        //playerInput = new PlayerInput();
+        playerInput = new PlayerInput();
+        playerInput.Enable();
 
-        //playerInput.Menu.Pause.started += TogglePause;
+
+        playerInput.Menu.Pause.started += TogglePause;
     }
 
-    private void Update()
+    private void OnDestroy()
     {
-        if (Input.GetKeyUp(KeyCode.P))
-        {
-            TogglePause();
-        }
+        playerInput.Menu.Pause.started -= TogglePause;
     }
 
     public void StartGame()
     {
-        //playerInput.Enable();
+        _menuCanvasGroup.gameObject.SetActive(false);
 
         _loadingCanvas.DOFade(1, 0.2f);
 
@@ -55,12 +54,13 @@ public class UIManager : MonoSingleton<UIManager>
 
         StartCoroutine(GameCanvas.StartCountdown());
 
-        PlayerController.Instance.ActivatePlayer();
     }
 
     public void StartMenu()
     {
-        //playerInput.Disable();
+        _menuCanvasGroup.gameObject.SetActive(true);
+
+        playerInput.Disable();
         Destroy(GameManager.Instance.transform.parent.gameObject);
 
         _loadingCanvas.DOFade(1, 0.2f);
@@ -95,8 +95,9 @@ public class UIManager : MonoSingleton<UIManager>
 
     }
 
-    public void TogglePause()
+    public void TogglePause(InputAction.CallbackContext context)
     {
+        if (GameManager.Instance.gameState == GameState.START) return;
         if (_actualCanvasGroup != _pauseCanvasGroup) HandleEnterPause();
         else if (_actualCanvasGroup == _pauseCanvasGroup) HandleExitPause();
     }
@@ -105,6 +106,8 @@ public class UIManager : MonoSingleton<UIManager>
 
     public void HandleEnterPause()
     {
+        PlayerController.Instance.DesactivePlayer();
+
         GameCanvas.canRunning = false;
 
         Cursor.lockState = CursorLockMode.None;
@@ -113,6 +116,8 @@ public class UIManager : MonoSingleton<UIManager>
     }
     public void HandleExitPause()
     {
+        PlayerController.Instance.ActivatePlayer();
+
         GameCanvas.canRunning = true;
 
         Cursor.lockState = CursorLockMode.Locked;
