@@ -55387,7 +55387,7 @@ PrefabInstance:
     - target: {fileID: 4048910994630497582, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
       propertyPath: Desc
-      value: Ale
+      value: In a log
       objectReference: {fileID: 0}
     - target: {fileID: 5216126532325142310, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
@@ -55532,7 +55532,7 @@ PrefabInstance:
     - target: {fileID: 8835586129289951868, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
       propertyPath: Desc
-      value: Ori
+      value: On a palm tree
       objectReference: {fileID: 0}
     - target: {fileID: 8835586129299258524, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
@@ -55542,7 +55542,7 @@ PrefabInstance:
     - target: {fileID: 8835586129299258524, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
       propertyPath: Desc
-      value: OUI
+      value: Next to a campfire
       objectReference: {fileID: 0}
     - target: {fileID: 8835586129617364064, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
@@ -55552,7 +55552,7 @@ PrefabInstance:
     - target: {fileID: 8835586129617364064, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
       propertyPath: Desc
-      value: HU
+      value: Statue of Moyia
       objectReference: {fileID: 0}
     - target: {fileID: 8835586129644833333, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
@@ -55562,7 +55562,7 @@ PrefabInstance:
     - target: {fileID: 8835586129644833333, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
       propertyPath: Desc
-      value: qsdfqsdf
+      value: Downside of a statue ring
       objectReference: {fileID: 0}
     - target: {fileID: 8835586129808726917, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
@@ -55572,7 +55572,7 @@ PrefabInstance:
     - target: {fileID: 8835586129808726917, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
       propertyPath: Desc
-      value: GO
+      value: Around the truck
       objectReference: {fileID: 0}
     - target: {fileID: 8835586130113643999, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
@@ -55582,7 +55582,7 @@ PrefabInstance:
     - target: {fileID: 8835586130113643999, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
       propertyPath: Desc
-      value: qsdf
+      value: At the bigest rock
       objectReference: {fileID: 0}
     - target: {fileID: 8835586130387187653, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
@@ -55592,7 +55592,7 @@ PrefabInstance:
     - target: {fileID: 8835586130387187653, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
       propertyPath: Desc
-      value: qsfdqsdf
+      value: In a dead tree
       objectReference: {fileID: 0}
     - target: {fileID: 8835586130550208076, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
@@ -55602,7 +55602,7 @@ PrefabInstance:
     - target: {fileID: 8835586130550208076, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
       propertyPath: Desc
-      value: qsdfsqd
+      value: On three logs, at the top space
       objectReference: {fileID: 0}
     - target: {fileID: 8835586130571318252, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
@@ -55612,7 +55612,7 @@ PrefabInstance:
     - target: {fileID: 8835586130571318252, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
       propertyPath: Desc
-      value: qsdfqsd
+      value: Behind to a log
       objectReference: {fileID: 0}
     - target: {fileID: 8835586130968910876, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
@@ -55622,7 +55622,7 @@ PrefabInstance:
     - target: {fileID: 8835586130968910876, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
       propertyPath: Desc
-      value: XIS
+      value: In the middle of a field
       objectReference: {fileID: 0}
     - target: {fileID: 8835586130985551311, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
@@ -55632,7 +55632,7 @@ PrefabInstance:
     - target: {fileID: 8835586130985551311, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
       propertyPath: Desc
-      value: df
+      value: It's time to sleep
       objectReference: {fileID: 0}
     - target: {fileID: 8835586130996747232, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
@@ -55642,7 +55642,7 @@ PrefabInstance:
     - target: {fileID: 8835586130996747232, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
       propertyPath: Desc
-      value: dsfqsdfs
+      value: Look at the sky
       objectReference: {fileID: 0}
     - target: {fileID: 8835586131126728895, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
@@ -55652,7 +55652,7 @@ PrefabInstance:
     - target: {fileID: 8835586131126728895, guid: 302198baa1f0a9e4dab48d245500370b,
         type: 3}
       propertyPath: Desc
-      value: Aler
+      value: Somewhere on the beach
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 302198baa1f0a9e4dab48d245500370b, type: 3}
