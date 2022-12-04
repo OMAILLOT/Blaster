@@ -6,10 +6,16 @@ using UnityEngine;
 public class TargetManager : MonoSingleton<TargetManager>
 {
     [SerializeField] private List<GameObject> targets;
+    [SerializeField] private List<string> targetDescription;
+
+    public string currentTargetDescription;
+
     public int numberOfTarget;
     public int nuberOfTargetHit;
 
     int randomTarget;
+    private Queue<string> targetDescriptionQueue = new Queue<string>();
+
     public void Start()
     {
         for (int i = 0; i < numberOfTarget; i++)
@@ -17,9 +23,13 @@ public class TargetManager : MonoSingleton<TargetManager>
             randomTarget = Random.Range(0, targets.Count);
 
             targets[randomTarget].SetActive(true);
+            targetDescriptionQueue.Enqueue(targetDescription[randomTarget]);
             targets.RemoveAt(randomTarget);
         }
         UIManager.Instance.GameCanvas.RefreshTargetCounter();
+
+        currentTargetDescription = targetDescriptionQueue.Peek();
+        targetDescriptionQueue.Dequeue();
     }
 
     public void TargetHit(GameObject target)
@@ -34,6 +44,11 @@ public class TargetManager : MonoSingleton<TargetManager>
             if (nuberOfTargetHit == numberOfTarget)
             {
                GameManager.Instance.EndGame();
+            }
+            if (currentTargetDescription.Length > 0)
+            {
+                currentTargetDescription = targetDescriptionQueue.Peek();
+                targetDescriptionQueue.Dequeue();
             }
         }
     }
