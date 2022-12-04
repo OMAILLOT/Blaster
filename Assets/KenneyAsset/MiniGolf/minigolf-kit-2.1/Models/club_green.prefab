@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2479062168453381134}
   - component: {fileID: 1569713914500543403}
   - component: {fileID: 3615345092767385441}
+  - component: {fileID: 4040251671364951463}
   m_Layer: 0
   m_Name: club_green
   m_TagString: Untagged
@@ -86,3 +87,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4040251671364951463
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2966945561622980276}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2243869233237897148, guid: 35b1492b8e8d69041a18859009acd155, type: 3}

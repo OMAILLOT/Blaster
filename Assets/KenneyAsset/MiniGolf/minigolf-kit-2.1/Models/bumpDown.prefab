@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5913831215165476793}
   - component: {fileID: 7331294756879794204}
   - component: {fileID: 4780864526370338006}
+  - component: {fileID: 2105088914391072203}
   m_Layer: 0
   m_Name: bumpDown
   m_TagString: Untagged
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2105088914391072203
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6438448192643028227}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8000694295192171632, guid: 36042737b647f584a8ae7df7f838eaeb, type: 3}

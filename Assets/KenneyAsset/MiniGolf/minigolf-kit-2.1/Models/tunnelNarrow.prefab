@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5465280242700317394}
   - component: {fileID: 8968717421209976183}
   - component: {fileID: 6598828641730365885}
+  - component: {fileID: 5679058746898547916}
   m_Layer: 3
   m_Name: tunnelNarrow
   m_TagString: Untagged
@@ -85,3 +86,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5679058746898547916
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4653137332766812264}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -950388038592434482, guid: 5c4372f20ef867447b3dc67525f2ec2c, type: 3}

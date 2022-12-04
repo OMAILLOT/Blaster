@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 194600297872413315}
   - component: {fileID: 3827074958359649574}
   - component: {fileID: 1366973518704617964}
+  - component: {fileID: 7955458520734676033}
   m_Layer: 0
   m_Name: obstacleBlock
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7955458520734676033
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718477367842867257}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5379316394883684701, guid: e83aa90535a02a2438c6c0bad62d654d, type: 3}

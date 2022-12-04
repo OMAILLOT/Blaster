@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8408933092902887856}
   - component: {fileID: 4836113440736013845}
   - component: {fileID: 7276027838382152415}
+  - component: {fileID: -2198798261900960238}
   m_Layer: 0
   m_Name: hillSquare
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &-2198798261900960238
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221499246097775370}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2282255540439187692, guid: e616619d7c1188d46a6dac13d362d829, type: 3}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 289426004127437351}
   - component: {fileID: 3723321303282343298}
   - component: {fileID: 1463410078351173960}
+  - component: {fileID: 5198263923166844177}
   m_Layer: 0
   m_Name: hillRound
   m_TagString: Untagged
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5198263923166844177
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103364068728015005}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 395294444399937961, guid: e35fbb49bc72b144884d7290eda819b4, type: 3}

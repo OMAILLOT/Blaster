@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8752899345577374857}
   - component: {fileID: 5681097421013941036}
   - component: {fileID: 7580586529164922854}
+  - component: {fileID: 4354910788770349211}
   m_Layer: 3
   m_Name: roofHighCorner
   m_TagString: Untagged
@@ -85,3 +86,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &4354910788770349211
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8229021244193975859}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3684115095073722761, guid: 87388583094e9c9458b1621418b3a5d3, type: 3}
