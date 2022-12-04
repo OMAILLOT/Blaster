@@ -12,14 +12,6 @@ Blaster vous propose deux niveau différents.
 A vous de faire le meilleur score !
 
 Blaster est un jeu de speedrun casse-tête, sur Windows, MAC, Linux en format 16:9
-## Assets
-#### Map
- - [Simple Space](https://www.kenney.nl/assets/simple-space)
-#### Weapon
- - [Cartoon FX 1 Remaster](http://www.jeanmoreno.com/unity/cartoonfx/)
-#### UI
- - [UI Pack: Space Expansion](https://www.kenney.nl/assets/ui-pack-space-expansion)
-
 
 ## Authors
 
