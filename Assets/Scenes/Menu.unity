@@ -1319,6 +1319,13 @@ PrefabInstance:
       propertyPath: m_text
       value: Nature
       objectReference: {fileID: 0}
+    - target: {fileID: 4674660878960389019, guid: aa38cb554c50e054a91fecb07581f8c2,
+        type: 3}
+      propertyPath: m_text
+      value: 'Best
+
+        999.99s'
+      objectReference: {fileID: 0}
     - target: {fileID: 4902518232275035519, guid: aa38cb554c50e054a91fecb07581f8c2,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1522,7 +1529,7 @@ PrefabInstance:
     - target: {fileID: 5735478086984050425, guid: aa38cb554c50e054a91fecb07581f8c2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 48.588978
+      value: 48.588974
       objectReference: {fileID: 0}
     - target: {fileID: 5735478086984050425, guid: aa38cb554c50e054a91fecb07581f8c2,
         type: 3}
@@ -2568,6 +2575,13 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7160944101173525086, guid: aa38cb554c50e054a91fecb07581f8c2,
+        type: 3}
+      propertyPath: m_text
+      value: 'Best
+
+        999.99s'
       objectReference: {fileID: 0}
     - target: {fileID: 7160944101173525086, guid: aa38cb554c50e054a91fecb07581f8c2,
         type: 3}

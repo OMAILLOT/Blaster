@@ -220,7 +220,7 @@ public class PlayerController : MonoSingleton<PlayerController>
                                   .OnComplete(() => currentShootingForce = 0);
                               });
             */
-            playerHead.transform.DOShakeRotation(1f, 1, 10, 0, true, ShakeRandomnessMode.Full);
+            playerHead.transform.DOShakeRotation(.2f, 5, 1, 0, true, ShakeRandomnessMode.Full);
 
             RaycastHit hit;
             if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out hit, shootRange, layerCanPlayerShoot))
