@@ -20,10 +20,10 @@ public class GameManager : MonoSingleton<GameManager>
         LoadGameData();
 
         UIManager.Instance.Init();
-        
-            PlayerController.Instance.Init();
 
-            AudioManager.Instance.Init();
+        PlayerController.Instance.Init();
+
+        AudioManager.Instance.Init();
     }
 
     void LoadGameData()
@@ -38,7 +38,7 @@ public class GameManager : MonoSingleton<GameManager>
     }
 
 
-  
+
 
     public void LoadScene(string sceneName) => StartScene(sceneName);
 

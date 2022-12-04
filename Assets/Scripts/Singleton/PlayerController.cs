@@ -72,7 +72,7 @@ public class PlayerController : MonoSingleton<PlayerController>
         PlayerInput.Player.Jump.started += OnJumpPressed;
         PlayerInput.Player.Jump.canceled += OnJumpPressed;
 
-        playerInput.Player.Shoot.started += OnShootPressed;
+        PlayerInput.Player.Shoot.started += OnShootPressed;
 
         PlayerInput.Player.Scope.started += OnScopePressed;
         PlayerInput.Player.Scope.canceled += OnScopePressed;
