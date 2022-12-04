@@ -236,7 +236,7 @@ public class PlayerController : MonoSingleton<PlayerController>
     IEnumerator WaitBeforeShoot()
     {
         isTireRateFinish = false;
-        yield return new WaitForSeconds(PlayerData.Instance.PlayerWeapon._fireRate);
+        yield return new WaitForSeconds(1 / PlayerData.Instance.PlayerWeapon._fireRate);
         isTireRateFinish = true;
     }
 
